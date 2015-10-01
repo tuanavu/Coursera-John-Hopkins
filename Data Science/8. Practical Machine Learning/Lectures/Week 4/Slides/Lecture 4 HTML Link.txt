@@ -1,4 +1,0 @@
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/024regularizedRegression/#1
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/025combiningPredictors/#1
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/027forecasting/#1
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/026unsupervisedPrediction/#1

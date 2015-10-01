@@ -1,3 +1,0 @@
-http://bcaffo.github.io/courses/06_StatisticalInference/11_Power/index.html#1
-http://bcaffo.github.io/courses/06_StatisticalInference/12_MultipleTesting/index.html#1
-http://bcaffo.github.io/courses/06_StatisticalInference/13_Resampling/index.html#1

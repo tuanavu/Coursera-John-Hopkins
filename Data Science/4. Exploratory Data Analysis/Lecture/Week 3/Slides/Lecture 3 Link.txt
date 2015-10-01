@@ -1,5 +1,0 @@
-http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/hierarchicalClustering/index.html#1
-
-http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/kmeansClustering/index.html#1
-
-http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/dimensionReduction/index.html#1
