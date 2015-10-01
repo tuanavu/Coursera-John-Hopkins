@@ -1,0 +1,16 @@
+#R Code for Project 2, plot 2
+#Question: Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
+# Data for plot previously downloaded to computer and loaded into R using provided
+# code NEI <- readRDS("summarySCC_PM25.rds")
+
+Balt <-subset(NEI, fips=="24510") #subset data for city of Baltimore Maryland
+BaltPM <- with(Balt,tapply(Emissions,year,sum)) #calculates total Emissions from all sources by year
+BaltPM1 <- melt(BaltPM) #assumes library(reshape2) is active - converts PM to a data.frame for easy plotting
+with(BaltPM1,plot(Var1,value,xlab="Year",ylab="Total Emissions", main="Baltimore - Total PM2.5 Emissions - All Sources"))
+model <- lm(value~Var1,BaltPM1) #fit a line to the data to see the trend
+abline(model,lwd=2) #add the line to the plot
+dev.copy(png,file="plot2-2.png")
+dev.off()
+
+
+#Answer: Plot does shows a downward trend in total emissions for Baltimore, but more analysis is needed.

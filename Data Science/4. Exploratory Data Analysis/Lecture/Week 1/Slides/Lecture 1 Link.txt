@@ -1,0 +1,9 @@
+http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/Principles/index.html#1
+
+http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/exploratoryGraphs/index.html#1
+
+http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/PlottingSystems/index.html#1
+
+http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/PlottingBase/index.html#1
+
+http://datasciencespecialization.github.io/courses/04_ExploratoryAnalysis/GraphicsDevices/index.html#1

@@ -1,0 +1,3 @@
+http://bcaffo.github.io/courses/06_StatisticalInference/05_Variance/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/06_CommonDistros/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/07_Asymptopia/index.html#1

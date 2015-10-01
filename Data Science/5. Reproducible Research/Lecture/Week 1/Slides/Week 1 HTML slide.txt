@@ -1,0 +1,5 @@
+http://datasciencespecialization.github.io/courses/05_ReproducibleResearch/structureOfADataAnalysis1/index.html
+
+http://datasciencespecialization.github.io/courses/05_ReproducibleResearch/structureOfADataAnalysis2/index.html
+
+http://datasciencespecialization.github.io/courses/05_ReproducibleResearch/organizingADataAnalysis/

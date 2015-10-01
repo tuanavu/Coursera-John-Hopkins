@@ -1,0 +1,15 @@
+#R Code for Project 2, plot 1
+#Question: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Make a plot showing the total PM2.5 emission from all sources
+# Data for plot previously downloaded to computer and loaded into R using provided code below
+# NEI <- readRDS("summarySCC_PM25.rds")
+
+PM <- with(NEI,tapply(Emissions,year,sum)) #calculates total Emissions from all sources by year
+
+PM1 <- melt(PM)   #assumes library(reshape2) is active - converts PM to a data.frame for easy plotting
+str(PM1) #check to obtain variable names for plot call
+with(PM1,plot(as.factor(Var1),value/1000000,xlab="Year",ylab="Total Emissions (millions)", main="Total PM2.5 Emissions from all Sources"))
+#changed Var1 which is the year to a factor since I want to limit the x-axis to only those years for which I have data
+dev.copy(png,file="plot2-1.png")
+dev.off()
+
+#Answer: Plot shows total emissions have decreased from 1999 to 2008

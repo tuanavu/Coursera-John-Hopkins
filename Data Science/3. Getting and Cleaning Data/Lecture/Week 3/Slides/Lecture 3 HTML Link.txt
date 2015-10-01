@@ -1,0 +1,10 @@
+http://jtleek.github.io/modules/03_GettingData/03_01_subsettingAndSorting
+
+http://jtleek.github.io/modules/03_GettingData/03_02_summarizingData
+
+http://jtleek.github.io/modules/03_GettingData/03_03_creatingNewVariables
+
+http://jtleek.github.io/modules/03_GettingData/03_04_reshapingData
+
+http://jtleek.github.io/modules/03_GettingData/03_05_mergingData
+

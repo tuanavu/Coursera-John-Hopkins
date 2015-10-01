@@ -1,0 +1,30 @@
+library(plyr)
+library(ggplot2)
+
+## Download the data and prepare it for analysis
+if (!file.exists("./data")) {
+  dir.create("data")
+}
+
+filename <- "./data/data.zip"
+if (!file.exists(filename)) {
+  download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip", 
+                filename, method="curl")
+  unzip(filename, exdir="./data")
+}
+
+## This first line will likely take a few seconds. Be patient!
+data <- readRDS("./data/summarySCC_PM25.rds")
+codes <- readRDS("./data/Source_Classification_Code.rds")
+
+## Subset the Data to only the data for Baltimore (fips = 24510)
+bm <- subset(data, fips == "24510")
+bm$year <- as.factor(bm$year)
+
+## Sum the data by year and type
+byYear <- ddply(bm, c("year", "type"), function(df) sum(df$Emissions))
+
+png("plot3.png", height=400, width=800)
+qplot(year, V1, data=byYear, facets=.~type, geom="bar", xlab="Year",
+      ylab="Total Emissions (in tons)", main="Baltimore PM2.5 emissions by Type")
+dev.off()

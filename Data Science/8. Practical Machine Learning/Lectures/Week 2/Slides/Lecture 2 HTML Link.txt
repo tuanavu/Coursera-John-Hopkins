@@ -1,0 +1,9 @@
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/010caretPackage/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/011dataSlicing/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/012trainOptions/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/013plottingPredictors/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/014basicPreprocessing/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/015covariateCreation/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/016preProcessingPCA/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/017predictingWithRegression/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/018predictingWithRegressionMC/#1

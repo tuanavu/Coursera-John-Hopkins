@@ -1,0 +1,145 @@
+library(plyr) ; library(htmltools) ; library(yaml)
+    library(rmarkdown) ; library(knitr)
+
+    subject_train <- read.table("./train/subject_train.txt")
+    x_train <- read.table("./train/X_train.txt")
+    y_train <- read.table("./train/y_train.txt")
+    
+    subject_test <- read.table("./test/subject_test.txt")
+    x_test <- read.table("./test/X_test.txt")
+    y_test <- read.table("./test/y_test.txt")
+    
+    dim(subject_train)
+    dim(x_train)
+    dim(y_train)
+    dim(subject_test)
+    dim(x_test)
+    dim(y_test)
+    
+    x_labels <- read.table("./features.txt")
+    y_labels <- read.table("./activity_labels.txt")
+    
+    df_train <- cbind(subject_train, x_train, y_train)
+    df_test <- cbind(subject_test, x_test, y_test)
+    df <- rbind(df_train, df_test)
+    
+    colnames(df) <- c("subject", as.character(x_labels[,2]), "activity")   
+    
+    for (row in 1:dim(y_labels)[[1]]) {
+        df[df$activity == y_labels[row,1], "descriptive_activity_label"] <- y_labels[row, 2]
+    }
+    
+
+    
+    head(df[,c("subject", "activity", "descriptive_activity_label")],5)
+    tail(df[,c("subject", "activity", "descriptive_activity_label")],5) 
+
+    grep("activity|^subject$", names(df), value=TRUE)
+    grep("mean|meanFreq", names(df), value=TRUE)
+    grep("std", names(df), value=TRUE)
+    
+    keep0 <- grep("activity|^subject$", names(df))
+    keep1 <- grep("mean|meanFreq", names(df))
+    keep2 <- grep("std", names(df))
+    sub_df <- df[, c(keep0, keep1, keep2)]
+    
+    old_column_names <- names(sub_df)
+    column_names <- names(sub_df)
+    for (each in 1:length(column_names)) {
+        column_names[each] <- sub("^t", "time_", column_names[each])
+        column_names[each] <- sub("^f", "freq_", column_names[each])
+        column_names[each] <- sub("BodyBody", "Body", column_names[each])
+        column_names[each] <- sub("\\(\\)", "", column_names[each])
+        column_names[each] <- gsub("-", "_", column_names[each])
+    }
+    names(sub_df) <- column_names
+    names(sub_df)
+    
+    table(sub_df$subject, sub_df$descriptive_activity_label)
+
+    tidy_df <- ddply(
+        sub_df, .(subject, descriptive_activity_label), summarize, 
+        time_BodyAcc_mean_X = mean(time_BodyAcc_mean_X),
+        time_BodyAcc_mean_Y = mean(time_BodyAcc_mean_Y),
+        time_BodyAcc_mean_Z = mean(time_BodyAcc_mean_Z),
+        time_GravityAcc_mean_X = mean(time_GravityAcc_mean_X),
+        time_GravityAcc_mean_Y = mean(time_GravityAcc_mean_Y),
+        time_GravityAcc_mean_Z = mean(time_GravityAcc_mean_Z),
+        time_BodyAccJerk_mean_X = mean(time_BodyAccJerk_mean_X),
+        time_BodyAccJerk_mean_Y = mean(time_BodyAccJerk_mean_Y),
+        time_BodyAccJerk_mean_Z = mean(time_BodyAccJerk_mean_Z),
+        time_BodyGyro_mean_X = mean(time_BodyGyro_mean_X),
+        time_BodyGyro_mean_Y = mean(time_BodyGyro_mean_Y),
+        time_BodyGyro_mean_Z = mean(time_BodyGyro_mean_Z),
+        time_BodyGyroJerk_mean_X = mean(time_BodyGyroJerk_mean_X),
+        time_BodyGyroJerk_mean_Y = mean(time_BodyGyroJerk_mean_Y),
+        time_BodyGyroJerk_mean_Z = mean(time_BodyGyroJerk_mean_Z),
+        time_BodyAccMag_mean = mean(time_BodyAccMag_mean),
+        time_GravityAccMag_mean = mean(time_GravityAccMag_mean),
+        time_BodyAccJerkMag_mean = mean(time_BodyAccJerkMag_mean),
+        time_BodyGyroMag_mean = mean(time_BodyGyroMag_mean),
+        time_BodyGyroJerkMag_mean = mean(time_BodyGyroJerkMag_mean),
+        freq_BodyAcc_mean_X = mean(freq_BodyAcc_mean_X),
+        freq_BodyAcc_mean_Y = mean(freq_BodyAcc_mean_Y),
+        freq_BodyAcc_mean_Z = mean(freq_BodyAcc_mean_Z),
+        freq_BodyAcc_meanFreq_X = mean(freq_BodyAcc_meanFreq_X),
+        freq_BodyAcc_meanFreq_Y = mean(freq_BodyAcc_meanFreq_Y),
+        freq_BodyAcc_meanFreq_Z = mean(freq_BodyAcc_meanFreq_Z),
+        freq_BodyAccJerk_mean_X = mean(freq_BodyAccJerk_mean_X),
+        freq_BodyAccJerk_mean_Y = mean(freq_BodyAccJerk_mean_Y),
+        freq_BodyAccJerk_mean_Z = mean(freq_BodyAccJerk_mean_Z),
+        freq_BodyAccJerk_meanFreq_X = mean(freq_BodyAccJerk_meanFreq_X),
+        freq_BodyAccJerk_meanFreq_Y = mean(freq_BodyAccJerk_meanFreq_Y),
+        freq_BodyAccJerk_meanFreq_Z = mean(freq_BodyAccJerk_meanFreq_Z),
+        freq_BodyGyro_mean_X = mean(freq_BodyGyro_mean_X),
+        freq_BodyGyro_mean_Y = mean(freq_BodyGyro_mean_Y),
+        freq_BodyGyro_mean_Z = mean(freq_BodyGyro_mean_Z),
+        freq_BodyGyro_meanFreq_X = mean(freq_BodyGyro_meanFreq_X),
+        freq_BodyGyro_meanFreq_Y = mean(freq_BodyGyro_meanFreq_Y),
+        freq_BodyGyro_meanFreq_Z = mean(freq_BodyGyro_meanFreq_Z),
+        freq_BodyAccMag_mean = mean(freq_BodyAccMag_mean),
+        freq_BodyAccMag_meanFreq = mean(freq_BodyAccMag_meanFreq),
+        freq_BodyAccJerkMag_mean = mean(freq_BodyAccJerkMag_mean),
+        freq_BodyAccJerkMag_meanFreq = mean(freq_BodyAccJerkMag_meanFreq),
+        freq_BodyGyroMag_mean = mean(freq_BodyGyroMag_mean),
+        freq_BodyGyroMag_meanFreq = mean(freq_BodyGyroMag_meanFreq),
+        freq_BodyGyroJerkMag_mean = mean(freq_BodyGyroJerkMag_mean),
+        freq_BodyGyroJerkMag_meanFreq = mean(freq_BodyGyroJerkMag_meanFreq),
+        time_BodyAcc_std_X = mean(time_BodyAcc_std_X),
+        time_BodyAcc_std_Y = mean(time_BodyAcc_std_Y),
+        time_BodyAcc_std_Z = mean(time_BodyAcc_std_Z),
+        time_GravityAcc_std_X = mean(time_GravityAcc_std_X),
+        time_GravityAcc_std_Y = mean(time_GravityAcc_std_Y),
+        time_GravityAcc_std_Z = mean(time_GravityAcc_std_Z),
+        time_BodyAccJerk_std_X = mean(time_BodyAccJerk_std_X),
+        time_BodyAccJerk_std_Y = mean(time_BodyAccJerk_std_Y),
+        time_BodyAccJerk_std_Z = mean(time_BodyAccJerk_std_Z),
+        time_BodyGyro_std_X = mean(time_BodyGyro_std_X),
+        time_BodyGyro_std_Y = mean(time_BodyGyro_std_Y),
+        time_BodyGyro_std_Z = mean(time_BodyGyro_std_Z),
+        time_BodyGyroJerk_std_X = mean(time_BodyGyroJerk_std_X),
+        time_BodyGyroJerk_std_Y = mean(time_BodyGyroJerk_std_Y),
+        time_BodyGyroJerk_std_Z = mean(time_BodyGyroJerk_std_Z),
+        time_BodyAccMag_std = mean(time_BodyAccMag_std),
+        time_GravityAccMag_std = mean(time_GravityAccMag_std),
+        time_BodyAccJerkMag_std = mean(time_BodyAccJerkMag_std),
+        time_BodyGyroMag_std = mean(time_BodyGyroMag_std),
+        time_BodyGyroJerkMag_std = mean(time_BodyGyroJerkMag_std),
+        freq_BodyAcc_std_X = mean(freq_BodyAcc_std_X),
+        freq_BodyAcc_std_Y = mean(freq_BodyAcc_std_Y),
+        freq_BodyAcc_std_Z = mean(freq_BodyAcc_std_Z),
+        freq_BodyAccJerk_std_X = mean(freq_BodyAccJerk_std_X),
+        freq_BodyAccJerk_std_Y = mean(freq_BodyAccJerk_std_Y),
+        freq_BodyAccJerk_std_Z = mean(freq_BodyAccJerk_std_Z),
+        freq_BodyGyro_std_X = mean(freq_BodyGyro_std_X),
+        freq_BodyGyro_std_Y = mean(freq_BodyGyro_std_Y),
+        freq_BodyGyro_std_Z = mean(freq_BodyGyro_std_Z),
+        freq_BodyAccMag_std = mean(freq_BodyAccMag_std),
+        freq_BodyAccJerkMag_std = mean(freq_BodyAccJerkMag_std),
+        freq_BodyGyroMag_std = mean(freq_BodyGyroMag_std),
+        freq_BodyGyroJerkMag_std = mean(freq_BodyGyroJerkMag_std)
+    )
+    
+    write.table(tidy_df, "./tidy_data_set.txt", row.names = FALSE)
+    
+    read_back_in_to_check <- read.table("./tidy_data_set.txt", header = TRUE)

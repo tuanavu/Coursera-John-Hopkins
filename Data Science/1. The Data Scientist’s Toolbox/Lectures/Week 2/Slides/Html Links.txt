@@ -1,0 +1,8 @@
+http://jtleek.com/modules/01_DataScientistToolbox/02_03_commandLineInterface/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_04_git/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_05_github/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_06_creatingRepos/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_07_basicGitCommands/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_08_basicMarkdown/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_09_installingRPackages/#1
+http://jtleek.com/modules/01_DataScientistToolbox/02_10_rtools/#1

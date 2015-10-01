@@ -1,0 +1,9 @@
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/001predictionMotivation/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/002whatIsPrediction/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/003relativeImportance/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/004inOutSampleErrors/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/005predictionStudyDesign/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/006typesOfErrors/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/007receiverOperatingCharacteristic/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/008crossValidation/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/009whatData/#1

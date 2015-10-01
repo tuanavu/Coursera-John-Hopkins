@@ -1,0 +1,80 @@
+library(plyr)
+
+## Download the data and prepare it for analysis
+if (!file.exists("./data")) {
+  dir.create("data")
+}
+
+filename <- "./data/data.zip"
+if (!file.exists(filename)) {
+  download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip", 
+                filename, method="curl")
+  unzip(filename, exdir="./data")
+}
+
+## This first line will likely take a few seconds. Be patient!
+data <- readRDS("./data/summarySCC_PM25.rds")
+codes <- readRDS("./data/Source_Classification_Code.rds")
+
+## Subset the Data to only the data for Baltimore and Los Angeles, and only ON-ROAD
+cities <- data.frame(fips = c("24510", "06037"), City.Name = c("Baltimore City", "Los Angeles"))
+vehicleData <- subset(data, fips == cities$fips, type="ON-ROAD")
+
+## Merge in the codes for each for further categorial analysis
+vehicleData <- merge(vehicleData, codes, by="SCC")
+vehicleData <- merge(vehicleData, cities, by="fips")
+
+## Break out the data by year and sum up the results
+byYear <- ddply(vehicleData, c("City.Name", "year"), function(df) data.frame(sum = sum(df$Emissions)))
+
+## Tally up the Percentage change from 1999 and the absolute change.
+Percent.Baseline <- numeric(0)
+Absolute.Baseline <- numeric(0)
+for(i in 1:nrow(byYear)) {
+  sum <- byYear[i,"sum"]
+  city <- byYear[i,"City.Name"]
+  baseline <- byYear[byYear$City.Name==city & byYear$year == 1999,"sum"]
+  Percent.Baseline[i] <- sum / baseline * 100
+  Absolute.Baseline[i] <- sum - baseline
+}
+byYear <- cbind(byYear, Percent.Baseline, Absolute.Baseline)
+
+png("plot6.png", height=800, width=800)
+par(mfrow=c(2,2))
+## Plot the absolute values for Baltimore City
+barplot(byYear[byYear$City.Name=="Baltimore City", "sum"],
+        names.arg=byYear[byYear$City.Name=="Baltimore City", "year"], 
+        xlab="Year", ylab="Total PM2.5 (Tons)", main="Baltimore", col="blue")
+
+## Plot the absolute values for Los Angeles
+barplot(byYear[byYear$City.Name=="Los Angeles", "sum"],
+        names.arg=byYear[byYear$City.Name=="Los Angeles", "year"], 
+        xlab="Year", ylab="Total PM2.5 (Tons)", main="Los Angeles", col="red")
+
+## Plot the percentage change from the baseline
+plot(byYear$year, byYear$Percent.Baseline, type="n", ylim=c(0,100),
+     ylab="Percentage Change since 1999", xlab="Year",
+     main="Percentage Change for each city from 1999")
+points(byYear[byYear$City.Name=="Baltimore City", "year"], 
+       byYear[byYear$City.Name=="Baltimore City", "Percent.Baseline"], 
+       type="l", col="blue")
+points(byYear[byYear$City.Name=="Los Angeles", "year"], 
+       byYear[byYear$City.Name=="Los Angeles", "Percent.Baseline"], 
+       type="l", col="red")
+legend("bottomleft", c("Baltimore City", "Los Angeles"), 
+       lty = c(1, 1), col = c("blue", "red"))
+
+## Plot the absolute change from the baseline
+plot(byYear$year, byYear$Absolute.Baseline, type="n",
+     ylab="Absolute Change since 1999", xlab="Year",
+     main="Absolute Change for each city from 1999")
+points(byYear[byYear$City.Name=="Baltimore City", "year"], 
+       byYear[byYear$City.Name=="Baltimore City", "Absolute.Baseline"], 
+       type="l", col="blue")
+points(byYear[byYear$City.Name=="Los Angeles", "year"], 
+       byYear[byYear$City.Name=="Los Angeles", "Absolute.Baseline"], 
+       type="l", col="red")
+legend("bottomleft", c("Baltimore City", "Los Angeles"), 
+       lty = c(1, 1), col = c("blue", "red"))
+
+dev.off()

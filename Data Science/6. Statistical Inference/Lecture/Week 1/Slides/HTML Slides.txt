@@ -1,0 +1,4 @@
+http://bcaffo.github.io/courses/06_StatisticalInference/01_Introduction/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/02_Probability/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/03_ConditionalProbability/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/04_Expectations/index.html#1

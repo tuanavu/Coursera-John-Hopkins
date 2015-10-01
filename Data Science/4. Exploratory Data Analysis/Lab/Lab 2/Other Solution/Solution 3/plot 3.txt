@@ -1,0 +1,31 @@
+# Code assumes the files are in the current working directory
+
+#Load Data
+
+
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
+
+#subset Maryland data
+GraphDataSubset <- subset(NEI, fips=='24510')
+
+#Sum emissions data by year and type ; assign more meaningful column names
+
+GraphData<-with (GraphDataSubset,aggregate(GraphDataSubset[,'Emissions'],by=list(year,type), sum, na.rm=TRUE))
+names(GraphData) <- c('Year','Type', 'TotalEmission')
+
+#Open the Graphics device,plot the data with ggplot &Close device
+
+png(filename='plot3.png', width=800, height=800, units='px')
+
+
+
+library(ggplot2)
+
+ggplot(GraphData, aes(x=factor(Year), y=TotalEmission, fill=Type)) +
+  geom_bar(stat="identity") +
+  facet_grid(. ~ Type) +
+  xlab('Year') +
+  ylab(expression('Total PM2.5 Emissions')) +
+  ggtitle(expression('Total PM2.5 Emmision in Baltimore City by Sources from 1999 to 2008'))
+dev.off()

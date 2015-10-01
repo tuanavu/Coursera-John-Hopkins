@@ -1,0 +1,4 @@
+http://jtleek.com/modules/01_DataScientistToolbox/03_01_typesOfQuestions/#1
+http://jtleek.com/modules/01_DataScientistToolbox/03_02_whatIsData/#1
+http://jtleek.com/modules/01_DataScientistToolbox/03_03_whatAboutBigData/#1
+http://jtleek.com/modules/01_DataScientistToolbox/03_04_experimentalDesign/#1

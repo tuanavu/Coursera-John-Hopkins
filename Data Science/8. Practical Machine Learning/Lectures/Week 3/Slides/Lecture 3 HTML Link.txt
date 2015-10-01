@@ -1,0 +1,5 @@
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/019predictingWithTrees/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/020bagging/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/021randomForests/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/022boosting/#1
+http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/023modelBasedPrediction/#1

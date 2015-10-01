@@ -1,0 +1,39 @@
+library(plyr)
+library(ggplot2)
+
+## Download the data and prepare it for analysis
+if (!file.exists("./data")) {
+  dir.create("data")
+}
+
+filename <- "./data/data.zip"
+if (!file.exists(filename)) {
+  download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip", 
+                filename, method="curl")
+  unzip(filename, exdir="./data")
+}
+
+## This first line will likely take a few seconds. Be patient!
+data <- readRDS("./data/summarySCC_PM25.rds")
+codes <- readRDS("./data/Source_Classification_Code.rds")
+
+## Subset the Data to only the data for Baltimore (fips = 24510)
+bm <- subset(data, fips == "24510")
+
+## Now get the SCCs related to Motor Vehicles across EI.Sectors for
+## Heavy Duty and Light Duty Vehicles
+vcodes <- codes[grep("Duty Vehicles", codes$EI.Sector),"SCC"]
+
+## Filter the data set down to just the Vehicle Sectors of interest in Baltimore
+vehicleData <- bm[bm$SCC %in% vcodes,]
+## Merge in the codes for each for further categorial analysis
+vehicleData <- merge(vehicleData, codes, by="SCC")
+
+## Sum all coal emissions together by year and EI.Sector for visualization
+byYear <- ddply(vehicleData, c("year", "EI.Sector"), function(df) sum(df$Emissions))
+
+## Now plot a graph of the sum of emissions per EI.Sector.
+png("plot5.png", height=500, width=800)
+print(qplot(year, V1, data=byYear, color=EI.Sector, geom=c("point", "line"),
+      main="Total Vehicle Emissions in Baltimore", xlab="Year", ylab="Emissions (PM2.5 tons)"))
+dev.off()

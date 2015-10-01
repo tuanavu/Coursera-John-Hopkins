@@ -1,0 +1,30 @@
+# Code assumes the files are in the current working directory
+
+
+library(ggplot2)
+
+library(plyr)
+
+#Load Data
+
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
+
+#Filter all Coal related source  from SCC Table and subset data from NEI
+
+GraphDataParam <- SCC[grep("(c|C)oal", SCC$EI.Sector),"SCC"]
+
+GraphDataSubset <- subset(NEI,SCC %in% GraphDataParam)
+
+
+#Open the Graphics device,plot the data by converting to KiloTons &Close device
+
+png(filename='plot4.png', width=480, height=480, units='px')
+
+
+ggplot(GraphDataSubset, aes(x=factor(year), y=Emissions/1000)) +
+  geom_bar(stat="identity") +
+    xlab('Year') +
+  ylab(expression('Total PM2.5 Emissions in KiloTons')) +
+  ggtitle(expression('Emissions from coal combustion-related sources from 1999 to 2008'))
+dev.off()

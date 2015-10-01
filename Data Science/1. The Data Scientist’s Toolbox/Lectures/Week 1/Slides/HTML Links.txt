@@ -1,0 +1,12 @@
+http://jtleek.com/modules/01_DataScientistToolbox/01_01_seriesMotivation/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_01a_toolBoxOverview/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_02_gettingHelp/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_03_findingAnswers/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_04_RProgramming/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_05_gettingData/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_06_exploratoryAnalysis/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_07_reproducibleResearch/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_08_statisticalInference/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_09_regressionModels/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_10_practicalMachineLearning/#1
+http://jtleek.com/modules/01_DataScientistToolbox/01_11_buildingDataProducts/#1

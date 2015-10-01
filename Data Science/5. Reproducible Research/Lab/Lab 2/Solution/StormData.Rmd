@@ -1,0 +1,130 @@
+---
+title: "Storm Data Analysis - Types of Event"
+author: "Tuan Vu"
+date: "Friday, July 25, 2014"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document: default
+---
+## Sysnopis
+This is an R Markdown document which is used to analyze the [Storm Data](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2) based on the [National Weather Service Storm Data](https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2Fpd01016005curr.pdf). The document is focus in answering the two question which are:
+
+    1. Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
+
+    2. Across the United States, which types of events have the greatest economic consequences? 
+
+The basic goal of this document is to explore the NOAA Storm Database and understand some basic concepts about weather events.
+
+## Data Processing
+
+Set the working directory:
+```{r, echo=TRUE}
+my.path <- "C:/temp"
+setwd(my.path)
+```
+
+Downloading data from the website:
+[Storm Data](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2)
+
+or you can download file using the file URL
+```{r, echo=TRUE}
+fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+fileZip <- "./repdata-data-StormData.csv.bs2"
+if (file.exists(fileZip) == F) {
+    download.file(fileUrl, fileZip, method="wget")
+}
+```
+
+Reading data from the raw file:
+```{r, echo=TRUE, cache=TRUE}
+data <- read.csv(bzfile("repdata-data-StormData.csv.bz2"), header = TRUE, sep=",")
+```
+
+## Question 1: Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
+
+Find the most harmful with respect to population health by FALITIES and INJURIES variable
+```{r, echo=TRUE}
+harm <- data$FATALITIES + data$INJURIES
+maxharm <- max(harm)
+maxharm
+```
+
+Subsetting data to find the most harmful with respect to population health
+```{r, echo=TRUE}
+mostharm <- data$EVTYPE[which(data$INJURIES + data$FATALITIES == maxharm)]
+mostharm
+```
+
+## Question 2: Across the United States, which types of events have the greatest economic consequences?
+
+Property Damage estimate in Billion dollar
+```{r, echo=TRUE}
+prop <- data$PROPDMG[which(data$PROPDMGEXP == "B")]
+prop
+```
+
+The maximum property damage:
+```{r, echo=TRUE}
+a <- max(prop)
+a
+```
+
+Crop Damage estimate in Billion dollar
+```{r, echo=TRUE}
+crop <- data$CROPDMG[which(data$CROPDMGEXP == "B")]
+crop
+```
+
+The maximum property damage:
+```{r, echo=TRUE}
+b <- max(crop)
+b
+```
+
+We can clearly see that the property damage is 115 billion dollar, which is the the largest amount.
+
+The type of event which creates the greatest economic consequences:
+```{r, echo=TRUE}
+econ <- data$EVTYPE[which((data$PROPDMG == a) & (data$PROPDMGEXP == "B"))]
+econ
+```
+## Plotting
+
+Number of injuries and fatalities caused by Storm
+```{r, echo=TRUE}
+tornado <- data[which(data$EVTYPE == "TORNADO"),]
+library(ggplot2)
+ggplot(data=tornado, aes(x=EVTYPE, y=total_human_cost)) +
+geom_bar(colour="black", stat="identity") +
+xlab ("Event type") + ylab ("Fatalities + Injuries") +
+theme(axis.text.x=element_text(angle = 90, hjust = 1, vjust = 0.3)) +
+ggtitle ("Total human cost by event type")
+
+```
+
+The Property Damage caused by Flood
+```{r, echo=TRUE}
+boxplot(data$PROPDMG[data$EVTYPE=="FLOOD"]
+        , main ="Property Damage caused by Flood"
+        ,xlab="FLOOD", ylab="Billions of Dollar")
+```
+
+## Results
+
+Question 1: Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
+```{r, echo=TRUE}
+mostharm <- data$EVTYPE[which(data$INJURIES + data$FATALITIES == maxharm)]
+mostharm
+```
+
+The answer is TORNADO.
+
+Question 2: Across the United States, which types of events have the greatest economic consequences?
+```{r, echo=TRUE}
+econ <- data$EVTYPE[which((data$PROPDMG == a) & (data$PROPDMGEXP == "B"))]
+econ
+```
+
+The answer is FLOOD.
+
