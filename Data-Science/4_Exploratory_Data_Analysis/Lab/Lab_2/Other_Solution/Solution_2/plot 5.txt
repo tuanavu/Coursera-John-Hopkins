@@ -1,0 +1,15 @@
+library(dplyr)
+library(ggplot2)
+
+NEI <- readRDS('summarySCC_PM25.rds')
+SCC <- readRDS('Source_Classification_Code.rds')
+
+# Choice of fields is somewhat arbitrary, but i have chosen all type="onroad"
+gd <- NEI %>%
+    filter(type == "ON-ROAD") %>%
+    filter(fips == 24510) %>%
+    group_by(year) %>%
+    summarise(TotalEmissions=sum(Emissions))
+png("plot5.png", width=480, height=480)
+qplot(year, TotalEmissions, geom="line", data=gd, main="Baltimore City")
+dev.off()

@@ -1,0 +1,44 @@
+library(plyr)
+library(ggplot2)
+
+## Download the data and prepare it for analysis
+if (!file.exists("./data")) {
+  dir.create("data")
+}
+
+filename <- "./data/data.zip"
+if (!file.exists(filename)) {
+  download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip", 
+                filename, method="curl")
+  unzip(filename, exdir="./data")
+}
+
+## This first line will likely take a few seconds. Be patient!
+data <- readRDS("./data/summarySCC_PM25.rds")
+codes <- readRDS("./data/Source_Classification_Code.rds")
+
+## We want to look at Coal Combustion Related activities.
+## Filtering the SCC Codes down to just those containing "coal" yields 239 SCCs 
+## for further analysis
+coal <- codes[grep("[Cc]oal", codes$Short.Name),"SCC"]
+
+## Filtering down the data set, we get 53,400 rows of the original 6.4M
+coalData <- data[data$SCC %in% coal,]
+## Merge in the codes for each for further categorial analysis
+coalData <- merge(coalData, codes, by="SCC")
+
+## Clean up the data a bit more
+coalData$year <- as.factor(coalData$year)
+
+## Sum all coal emissions together by year and EI.Sector for visualization
+coalByYear <- ddply(coalData, c("year", "EI.Sector"), function(df) sum(df$Emissions))
+
+## Now plot a graph of the sum of emissions per EI.Sector.
+png("plot4.png", height=760, width=1280)
+print(ggplot(coalByYear, aes(y = V1, x = year, group=EI.Sector))
+      + geom_point()
+      + geom_smooth()
+      + facet_wrap( ~ EI.Sector, scales = "free")
+      + ylab("Emissions (scaled differently per graph)")
+      + xlab("Year"))
+dev.off()

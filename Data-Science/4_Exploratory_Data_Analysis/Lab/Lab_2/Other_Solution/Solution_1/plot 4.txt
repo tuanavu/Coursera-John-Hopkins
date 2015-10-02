@@ -1,0 +1,21 @@
+#R Code for Project 2, plot 4
+#Question: Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
+# Data for plot previously downloaded to computer and loaded into R using provided code
+# NEI <- readRDS("summarySCC_PM25.rds")
+# SCC <- readRDS("Source_Classification_Code.rds")
+
+#Determine the coal combustion-related sources by using any SCC short names with "Coal" in it
+dt.Coal<-merge(data.table(NEI),SCC[grepl("Coal", SCC[,"Short.Name"]),],by="SCC",ignore.case=TRUE)
+
+Coal <- with(dt.Coal,tapply(Emissions,year,sum)) #calculates total Emissions from all coal sources by year
+Coal1 <- melt(Coal) #assumes library(reshape2) is active - converts Coal to a data.frame for easy plotting
+with(Coal1,plot(Var1,value/(10^3),xlab="Year",ylab="Emissions - (000s)", main=expression("Total "* PM[2.5]*" Emissions - Coal Sources")))
+
+model <- lm((value/(10^3))~Var1,Coal1) #fit a line to the data to see the trend
+abline(model,lwd=2) #add the line to the plot
+
+#Print plot
+dev.copy(png,file="plot2-4.png")
+dev.off()
+
+#Answer: Downward trends in total emissions from coal sources.

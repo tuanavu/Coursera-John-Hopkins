@@ -1,0 +1,31 @@
+## Question 1
+## Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?
+
+## setting directory
+if(!file.exists("Exploratory_Data_Analysis_CP2")){dir.create("Exploratory_Data_Analysis_CP2")}
+setwd("./Exploratory_Data_Analysis_CP2")
+
+## downloading files
+setInternet2()
+url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+download.file(url,"air_pollution.zip")
+unzip("air_pollution.zip")
+
+## loading data
+summarySCC <- readRDS("summarySCC_PM25.rds")
+Source_Class <- readRDS("Source_Classification_Code.rds")
+
+## loading packages
+library(ggplot2)
+library(reshape2)
+
+## calculating yearly development in US
+yearly_dev <- with(summarySCC,tapply(Emissions,year,sum))
+    #tapply sums the emissions for each year
+
+## plotting
+barplot(yearly_dev,xlab="Years",ylab="Emissions",col="red",main="Development of PM2.5 Emissions")
+
+## saving plot
+dev.copy(png, file = "plot1.png",width=480,height=480) 
+dev.off()

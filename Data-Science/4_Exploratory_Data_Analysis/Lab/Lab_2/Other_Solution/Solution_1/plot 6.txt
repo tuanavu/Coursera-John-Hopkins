@@ -1,0 +1,46 @@
+#R Code for Project 2, plot 6
+#Question: Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). 
+#Which city has seen greater changes over time in motor vehicle emissions?
+# Data for plot previously downloaded to computer and loaded into R using provided code
+# NEI <- readRDS("summarySCC_PM25.rds")
+
+#subset data for city of Baltimore Maryland and LA County using on-road type which represents motor vehicle sources
+df <-subset(NEI, fips %in% c("24510","06037") & type=="ON-ROAD")
+
+#try totals and facets
+# Assumes library(plyr)is loaded - using ddply to summarize Total PM2.5 by year
+new.df <- ddply(df, .(year, fips), summarize,
+                sum.PM2.5=sum(Emissions))
+new.df$fips <- mapvalues(new.df$fips, from = c("06037", "24510"), to = c("Los Angeles County", "Baltimore")) #renaming fips to meaningful labels
+
+#create graph in ggplot2, add annotations and answer specific question - "greatest change"
+g <- ggplot(new.df, aes(year,sum.PM2.5))
+p <- g + geom_point() + facet_grid(. ~ fips) + geom_smooth(method = "lm") + 
+  labs(title = "Total Motor Vehicle Emissions") + labs(x="Year",y="Total Emissions") +
+  theme_bw()
+
+#answer for greatest change is not visually obvious so look at slope coefficient.
+#Note I am assuming greatest change is relative not absolute. So I will use the slope 
+Balt_Line <- coef(lm(sum.PM2.5~year,data=subset(new.df,fips=="Baltimore")))
+LA_line <- coef(lm(sum.PM2.5~year,data=subset(new.df,fips=="Los Angeles County")))
+
+# add labels to plot using coefficients from above:
+#Add Los Angeles County lm line parameters
+
+#this is funky code, year=2005 and sum.PM2.5=2000 are used for specifying the x,y placement of the label, then specify which facet (fips) I want the label to appear on.
+
+ann_text <- data.frame(year = 2005,sum.PM2.5 = 2000,lab = "y = 27.94x - 51,758",
+                       fips = factor("Los Angeles County",levels = c("Baltimore","Los Angeles County")))
+
+pl <- p + geom_text(data = ann_text,label = ann_text$lab)
+
+#Add Baltimore lm line parameters
+ann_textB <- data.frame(year = 2005,sum.PM2.5 = 2000,lab = "y = -25.98x + 52,233",
+                       fips = factor("Baltimore",levels = c("Baltimore","Los Angeles County")))
+pl1 <- pl + geom_text(data = ann_textB,label = ann_textB$lab)
+
+#Print plot
+dev.copy(png,file="plot2-6.png")
+dev.off()
+
+#Answer: It's close but LA has the greater rate of change.
