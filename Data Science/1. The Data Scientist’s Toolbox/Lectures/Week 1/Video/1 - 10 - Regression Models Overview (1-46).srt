@@ -1,0 +1,172 @@
+1
+00:00:00,910 --> 00:00:03,560
+One of the most widely used tools for
+performing any
+
+2
+00:00:03,560 --> 00:00:07,610
+sort of statistical or data science
+analysis is a regression model.
+
+3
+00:00:07,610 --> 00:00:10,200
+So the next course will be covering those
+regression models.
+
+4
+00:00:10,200 --> 00:00:11,780
+Some would say it's just one other form
+
+5
+00:00:11,780 --> 00:00:15,260
+of just pre, creating a supervised
+predictive function.
+
+6
+00:00:15,260 --> 00:00:17,845
+But it's a little bit more than that in
+that it's, one of the more
+
+7
+00:00:17,845 --> 00:00:20,760
+interpretable and easily used, tools that
+you
+
+8
+00:00:20,760 --> 00:00:23,510
+can use to sort of explain you analyses.
+
+9
+00:00:23,510 --> 00:00:26,380
+The people that are outside of the data
+science community.
+
+10
+00:00:26,380 --> 00:00:29,070
+And, as communication is a critical
+component of data science,
+
+11
+00:00:29,070 --> 00:00:31,930
+that makes regression models a critical
+component of the tool box.
+
+12
+00:00:33,010 --> 00:00:34,560
+So, this course will cover linear
+regression
+
+13
+00:00:34,560 --> 00:00:37,420
+and multiple regression, ideas like
+confounding which
+
+14
+00:00:37,420 --> 00:00:42,170
+we'll see a little bit in this class even,
+some prediction using linear models.
+
+15
+00:00:43,210 --> 00:00:46,300
+Scatterplots smoothing its splines, and
+then
+
+16
+00:00:46,300 --> 00:00:48,740
+resampling inference, and maybe weighted
+regression.
+
+17
+00:00:50,910 --> 00:00:54,550
+So, this will cover also some ideas
+including ideas that you hear
+
+18
+00:00:54,550 --> 00:00:58,980
+about often when you read articles about
+statistical analyses in the popular press.
+
+19
+00:00:58,980 --> 00:01:00,930
+Things like regression to the mean.
+
+20
+00:01:00,930 --> 00:01:03,410
+So, why is it that children of tall
+parents tend
+
+21
+00:01:03,410 --> 00:01:06,720
+to be tall but not as tall as their
+parents were?
+
+22
+00:01:06,720 --> 00:01:09,530
+So these sorts of fundamental ideas will
+be explained in the regression class.
+
+23
+00:01:09,530 --> 00:01:12,890
+So we'll also talk a little bit about the
+basic regression
+
+24
+00:01:12,890 --> 00:01:15,380
+model, there'll be a little bit more
+mathematics in this class
+
+25
+00:01:15,380 --> 00:01:17,280
+than there are in some of the other
+classes and sort
+
+26
+00:01:17,280 --> 00:01:23,360
+of deriving and understanding the basic
+ideas behind a regression model.
+
+27
+00:01:23,360 --> 00:01:25,610
+But calculus and the new algebra are not
+required.
+
+28
+00:01:25,610 --> 00:01:27,600
+We've worked hard to make it so that,
+basic
+
+29
+00:01:27,600 --> 00:01:30,050
+understanding of algebra is sufficient to
+follow this class.
+
+30
+00:01:31,430 --> 00:01:34,650
+We'll also learn about multivariable
+regression analyses so,
+
+31
+00:01:34,650 --> 00:01:36,630
+sometimes you want to relate one variable
+to another
+
+32
+00:01:36,630 --> 00:01:39,800
+variable but you want to account for, what
+happens
+
+33
+00:01:39,800 --> 00:01:42,660
+when you include other variables,
+adjusting your analysis.
+
+34
+00:01:42,660 --> 00:01:44,630
+You often hear about adjusting the
+analysis, and
+
+35
+00:01:44,630 --> 00:01:46,150
+that will be covered in this class as
+well.
+

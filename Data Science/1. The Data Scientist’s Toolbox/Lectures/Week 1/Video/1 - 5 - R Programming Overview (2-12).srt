@@ -1,0 +1,212 @@
+1
+00:00:00,820 --> 00:00:03,205
+This is the first in a series of overview
+lectures that
+
+2
+00:00:03,205 --> 00:00:05,725
+tell'll you about the other courses in the
+Data Science course track.
+
+3
+00:00:05,725 --> 00:00:08,170
+I'm going to start off with R programming,
+which is another
+
+4
+00:00:08,170 --> 00:00:11,660
+one of the most fundamental classes in our
+Data Science track.
+
+5
+00:00:11,660 --> 00:00:14,180
+R is the language that we're going to be
+using for most of the data
+
+6
+00:00:14,180 --> 00:00:18,518
+analysis and data science that we're going
+to be doing on the computer science end.
+
+7
+00:00:18,518 --> 00:00:22,030
+And so R will tell you, the R programming
+class will tell you a
+
+8
+00:00:22,030 --> 00:00:24,040
+little bit about data types, about
+sub-setting
+
+9
+00:00:24,040 --> 00:00:27,090
+data, reading and writing it from files.
+
+10
+00:00:27,090 --> 00:00:29,750
+How to write functions, to do things to
+that data, how
+
+11
+00:00:29,750 --> 00:00:32,990
+to debug them and then a little bit about
+simulation and optimization.
+
+12
+00:00:32,990 --> 00:00:36,300
+So now I'm just going to show you a couple
+of examples
+
+13
+00:00:36,300 --> 00:00:38,030
+of the sorts of things that you'll learn
+in that class.
+
+14
+00:00:38,030 --> 00:00:40,060
+So for example you'll learn about the
+
+15
+00:00:40,060 --> 00:00:43,220
+readLines function for reading text from a
+file.
+
+16
+00:00:43,220 --> 00:00:45,780
+So in this case what we're going to be
+doing is we're going to be
+
+17
+00:00:45,780 --> 00:00:49,040
+reading lines actually from the website of
+
+18
+00:00:49,040 --> 00:00:51,120
+the Johns Hopkins Bloomberg School of
+Public Health.
+
+19
+00:00:51,120 --> 00:00:53,120
+So this is the website right there.
+
+20
+00:00:53,120 --> 00:00:56,370
+And so what we do is we go to that website
+and then
+
+21
+00:00:56,370 --> 00:01:01,790
+we use the readLine func, readLines
+function to read the text from that site.
+
+22
+00:01:01,790 --> 00:01:04,950
+And then we look at that text and you can
+actually see the HTML code,
+
+23
+00:01:04,950 --> 00:01:09,350
+and it's actually been sucked into R that
+you can then use to analyze the website.
+
+24
+00:01:11,430 --> 00:01:13,240
+Another thing that you'll be learning
+about is how
+
+25
+00:01:13,240 --> 00:01:15,030
+to figure out when there's something wrong
+with your function.
+
+26
+00:01:15,030 --> 00:01:17,120
+So, you'll be writing lots of functions in
+this class.
+
+27
+00:01:17,120 --> 00:01:19,060
+And so, one thing that you want to know
+
+28
+00:01:19,060 --> 00:01:21,840
+is when they aren't working, why aren't
+they working?
+
+29
+00:01:21,840 --> 00:01:25,940
+And so this is a slide that comes from one
+of those about
+
+30
+00:01:25,940 --> 00:01:28,700
+how do you figure out, what were you
+expecting, and what did you get?
+
+31
+00:01:28,700 --> 00:01:30,310
+And how do you reproduce the problems so
+
+32
+00:01:30,310 --> 00:01:32,140
+that you can figure out how that function
+works?
+
+33
+00:01:34,280 --> 00:01:37,620
+Well you'll be leaning things like more
+detailed functions.
+
+34
+00:01:37,620 --> 00:01:40,538
+So, for example, this is the lapply
+function.
+
+35
+00:01:40,538 --> 00:01:44,988
+And so the lapply function takes a
+particular kind of argument.
+
+36
+00:01:44,988 --> 00:01:47,920
+And a list in this case, and applies a
+function to
+
+37
+00:01:47,920 --> 00:01:50,700
+all the elements of that list and returns
+something back to you.
+
+38
+00:01:50,700 --> 00:01:54,970
+And so, this is interesting because it's
+one of the many examples where
+
+39
+00:01:54,970 --> 00:02:00,610
+the actual, sort of, analysis is actually
+being done internally in C code.
+
+40
+00:02:00,610 --> 00:02:02,960
+But you don't actually have to access to
+that.
+
+41
+00:02:02,960 --> 00:02:05,110
+You can actually just use the R function.
+
+42
+00:02:05,110 --> 00:02:06,760
+So this will cover everything from sort of
+
+43
+00:02:06,760 --> 00:02:09,700
+the basics, to more complicated functions
+like lapply.
+
+44
+00:02:09,700 --> 00:02:12,250
+And set you up very nicely for the rest of
+the course sequence.
+

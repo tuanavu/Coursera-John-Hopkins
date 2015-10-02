@@ -1,0 +1,829 @@
+1
+00:00:00,930 --> 00:00:02,780
+This lecture is about getting help.
+
+2
+00:00:02,780 --> 00:00:05,000
+This lecture applies both to this cla-,
+this course
+
+3
+00:00:05,000 --> 00:00:07,180
+that you're taking right now, the Data
+Scientist Toolbox.
+
+4
+00:00:07,180 --> 00:00:10,170
+But also to all the other courses you're
+going to be taking in the course track.
+
+5
+00:00:11,540 --> 00:00:14,850
+So, keep in mind that in a standard class
+you may have taken in a
+
+6
+00:00:14,850 --> 00:00:18,050
+class of 30 or 100 people, you would raise
+your hand and ask a question.
+
+7
+00:00:18,050 --> 00:00:21,270
+And then you'd be able to immediately get
+feedback from your instructor.
+
+8
+00:00:21,270 --> 00:00:23,430
+But in a class like this in a massive
+online open
+
+9
+00:00:23,430 --> 00:00:26,575
+class there could be up to a 100,000
+people taking the class.
+
+10
+00:00:26,575 --> 00:00:30,310
+And what you're going to do instead is
+post your questions to the message board.
+
+11
+00:00:30,310 --> 00:00:31,620
+And then hopefully, your fellow students
+
+12
+00:00:31,620 --> 00:00:34,010
+will upload them if they're good
+questions.
+
+13
+00:00:34,010 --> 00:00:36,950
+And you instructor will try to respond to
+as many as possible, but
+
+14
+00:00:36,950 --> 00:00:41,800
+probably more often than that your peers
+or community TAs will be responding.
+
+15
+00:00:41,800 --> 00:00:44,940
+And so, there are three of us that are
+teaching these nine classes and we
+
+16
+00:00:44,940 --> 00:00:47,850
+are going to try to put in as much as we
+can to answer your questions.
+
+17
+00:00:47,850 --> 00:00:50,340
+But obviously, that's a limited resource.
+
+18
+00:00:50,340 --> 00:00:53,295
+And so relying on your fellow peers and
+your community
+
+19
+00:00:53,295 --> 00:00:56,610
+TAs, we found is a great way to get
+involved.
+
+20
+00:00:56,610 --> 00:00:59,420
+We've also learned that the community
+that's built around the
+
+21
+00:00:59,420 --> 00:01:02,200
+message boards and the massive online open
+courses is amazing.
+
+22
+00:01:02,200 --> 00:01:06,400
+And it's a, probably the best learning
+part of the entire experience.
+
+23
+00:01:06,400 --> 00:01:08,300
+And so hopefully, you'll get involved and
+you'll
+
+24
+00:01:08,300 --> 00:01:10,360
+be an active participant in those message
+boards.
+
+25
+00:01:12,110 --> 00:01:17,240
+It's very clear that the fastest answer is
+often the one that you find for yourself.
+
+26
+00:01:17,240 --> 00:01:20,200
+So to try to answer your questions
+yourself, you should try to
+
+27
+00:01:20,200 --> 00:01:23,290
+look it up on Google or look it up on
+Stack Overflow.
+
+28
+00:01:23,290 --> 00:01:25,710
+If you ask a question that's very simple
+to Google, you'll
+
+29
+00:01:25,710 --> 00:01:28,780
+often a get response that says Google it
+or read the documentation.
+
+30
+00:01:28,780 --> 00:01:32,130
+Which is not the easiest way to get the
+answer that you're going for.
+
+31
+00:01:33,200 --> 00:01:35,250
+An important part of being an active
+participant
+
+32
+00:01:35,250 --> 00:01:38,750
+in a community environment here is to, if
+
+33
+00:01:38,750 --> 00:01:42,630
+you figure out an answer to a question is
+to post it to the message board.
+
+34
+00:01:42,630 --> 00:01:45,030
+If you're struggling with a particular
+part
+
+35
+00:01:45,030 --> 00:01:48,690
+or structure or idea or art programming
+exercise.
+
+36
+00:01:48,690 --> 00:01:50,270
+It's almost a sure bet that there's a lot
+
+37
+00:01:50,270 --> 00:01:52,370
+of other people that are struggling with
+the same thing.
+
+38
+00:01:52,370 --> 00:01:54,790
+And so, they'll really appreciate it if
+you take the time to post
+
+39
+00:01:54,790 --> 00:01:57,980
+the message board the way that you figured
+out how to solve that problem.
+
+40
+00:01:57,980 --> 00:02:02,240
+So, I thought I'd mention just a few
+important R functions that will
+
+41
+00:02:02,240 --> 00:02:06,510
+help you to find answers for some of the
+questions you might have.
+
+42
+00:02:06,510 --> 00:02:09,080
+So, when you have an R function, we'll
+talk a
+
+43
+00:02:09,080 --> 00:02:12,090
+little bit more about R more later in the
+class.
+
+44
+00:02:12,090 --> 00:02:14,990
+You can actually type several different
+ways you can
+
+45
+00:02:14,990 --> 00:02:19,200
+type to get the help file for that
+function.
+
+46
+00:02:19,200 --> 00:02:22,140
+So, one example is that you can type like
+this.
+
+47
+00:02:22,140 --> 00:02:26,500
+You can type ?rnorm and that will tell you
+
+48
+00:02:26,500 --> 00:02:29,850
+what the help file is for the function
+rnorm.
+
+49
+00:02:29,850 --> 00:02:32,690
+You can also search like this help.search.
+
+50
+00:02:32,690 --> 00:02:35,020
+And if you use help.search, you might not
+even
+
+51
+00:02:35,020 --> 00:02:37,310
+necessarily have to get the function name
+exactly right.
+
+52
+00:02:37,310 --> 00:02:41,560
+It'll still search through, through the
+help files and try to find things for you.
+
+53
+00:02:41,560 --> 00:02:43,420
+And then, if you want to get the arguments
+for a function,
+
+54
+00:02:43,420 --> 00:02:48,170
+you can use the function, you can use,
+the, command args, like this.
+
+55
+00:02:48,170 --> 00:02:50,800
+Args of rnorm and that'll tell you the
+function arguments.
+
+56
+00:02:52,020 --> 00:02:54,830
+These functions are very useful if your
+goal is to try
+
+57
+00:02:54,830 --> 00:02:58,430
+to figure out how r is working for a
+particular function.
+
+58
+00:02:58,430 --> 00:03:00,410
+But it might not be so useful, if you want
+
+59
+00:03:00,410 --> 00:03:04,730
+to understand the sort of underlying
+concepts involved in those functions.
+
+60
+00:03:06,560 --> 00:03:09,220
+So another thing is you might want to do
+is
+
+61
+00:03:09,220 --> 00:03:10,960
+actually look a little bit deeper into the
+code.
+
+62
+00:03:10,960 --> 00:03:14,450
+So if you wanted to do that you can
+actually just type the function
+
+63
+00:03:14,450 --> 00:03:16,060
+name without any brackets and it will
+
+64
+00:03:16,060 --> 00:03:18,055
+actually reproduce the entire code for
+you.
+
+65
+00:03:18,055 --> 00:03:23,780
+And so what you see here if I type rnorm
+like this.
+
+66
+00:03:23,780 --> 00:03:28,190
+Then what I end up getting out on the R
+console is actually this right here.
+
+67
+00:03:28,190 --> 00:03:33,070
+I get out sort of all the code that
+corresponds to that function.
+
+68
+00:03:33,070 --> 00:03:34,940
+You could also see this link here to a
+
+69
+00:03:34,940 --> 00:03:36,970
+reference card with a lot of helpful R
+functions.
+
+70
+00:03:38,640 --> 00:03:41,450
+So, an important point that you'll run
+into a lot
+
+71
+00:03:41,450 --> 00:03:43,980
+in this class is how to ask an R question.
+
+72
+00:03:43,980 --> 00:03:45,620
+And so there are a few different
+components
+
+73
+00:03:45,620 --> 00:03:47,550
+of it that you should keep in mind.
+
+74
+00:03:47,550 --> 00:03:50,100
+First is, you will want to outline what
+are the steps
+
+75
+00:03:50,100 --> 00:03:53,560
+that you have executed in order to create
+this problem.
+
+76
+00:03:53,560 --> 00:03:56,270
+So, if you ran three functions in order
+
+77
+00:03:56,270 --> 00:03:58,370
+you should reproduce what those three
+functions are.
+
+78
+00:03:59,370 --> 00:04:02,840
+And then you should say what you expect
+the output to be.
+
+79
+00:04:02,840 --> 00:04:04,100
+And then what you saw instead.
+
+80
+00:04:04,100 --> 00:04:05,860
+So I expected it to give me the answer
+
+81
+00:04:05,860 --> 00:04:08,720
+to this question and instead, it gave me
+an error.
+
+82
+00:04:08,720 --> 00:04:12,460
+And so a really important thing to keep in
+mind is that R packages and R and all
+
+83
+00:04:12,460 --> 00:04:13,580
+of these other tools that we're going to
+be
+
+84
+00:04:13,580 --> 00:04:15,670
+telling you about are going to be evolving
+over time.
+
+85
+00:04:15,670 --> 00:04:17,730
+And so it's really important that you tell
+
+86
+00:04:17,730 --> 00:04:19,490
+the version of the product that you're
+using.
+
+87
+00:04:19,490 --> 00:04:21,490
+So, the version of the package, the
+version of R
+
+88
+00:04:21,490 --> 00:04:24,560
+that you're using and then what operating
+system you're working on.
+
+89
+00:04:24,560 --> 00:04:26,420
+Whether you're on Mac or Linux or Windows.
+
+90
+00:04:27,800 --> 00:04:29,880
+When you're asking a data analysis
+question, there's a similar
+
+91
+00:04:29,880 --> 00:04:32,450
+set of things that you need to re, re,
+report.
+
+92
+00:04:32,450 --> 00:04:34,660
+So first is what is the question you are
+trying to answer.
+
+93
+00:04:34,660 --> 00:04:38,040
+You're saying I'm trying to relate
+variable y to variable x.
+
+94
+00:04:38,040 --> 00:04:40,560
+And then, what steps or tools do you use
+to answer it?
+
+95
+00:04:40,560 --> 00:04:45,100
+This may be a combination of R tools and
+outside tools and maybe some intuition.
+
+96
+00:04:45,100 --> 00:04:48,120
+And then, you again, you report what you
+expected to see.
+
+97
+00:04:48,120 --> 00:04:49,400
+I expected to be able to tell the
+
+98
+00:04:49,400 --> 00:04:51,710
+relationship between them and what do I
+see instead?
+
+99
+00:04:51,710 --> 00:04:53,500
+I see oh, I don't know, I see some
+
+100
+00:04:53,500 --> 00:04:56,140
+crazy scatter plot and I don't know what
+that means.
+
+101
+00:04:56,140 --> 00:04:58,030
+And so important thing to think, keep in
+mind here
+
+102
+00:04:58,030 --> 00:05:00,410
+too is what other solutions you might have
+thought about.
+
+103
+00:05:00,410 --> 00:05:02,260
+So sometimes you run through three or four
+
+104
+00:05:02,260 --> 00:05:04,340
+different things to try to get the right
+answer.
+
+105
+00:05:04,340 --> 00:05:07,980
+And so, if you're report what you try or
+the different things you try, there
+
+106
+00:05:07,980 --> 00:05:09,570
+when people try to answer your question,
+they
+
+107
+00:05:09,570 --> 00:05:11,600
+can go directly to something you haven't
+tried.
+
+108
+00:05:11,600 --> 00:05:17,100
+So an important point of asking questions
+in
+
+109
+00:05:17,100 --> 00:05:19,500
+highly massive class like this is to make
+sure
+
+110
+00:05:19,500 --> 00:05:21,110
+that you're very specific in the titles of
+
+111
+00:05:21,110 --> 00:05:23,920
+the questions that you're using on the
+message forum.
+
+112
+00:05:23,920 --> 00:05:27,010
+So some examples of bad titles are things
+like this.
+
+113
+00:05:27,010 --> 00:05:28,640
+So you can say, Help!
+
+114
+00:05:28,640 --> 00:05:30,750
+I can't fit a linear model.
+
+115
+00:05:30,750 --> 00:05:34,470
+Then you're not exactly giving a lot of
+detail as
+
+116
+00:05:34,470 --> 00:05:38,440
+what exactly your problem is or how it can
+be addressed?
+
+117
+00:05:38,440 --> 00:05:41,580
+So, a better question to ask is, sort of
+saying, okay, I
+
+118
+00:05:41,580 --> 00:05:45,328
+have this function and it's happening in
+that version of R 2.15.
+
+119
+00:05:45,328 --> 00:05:49,980
+And here is the error that's being
+produced.
+
+120
+00:05:49,980 --> 00:05:52,620
+It's a seg fault that's being produced.
+
+121
+00:05:52,620 --> 00:05:54,430
+And is only being produced when I have a
+
+122
+00:05:54,430 --> 00:05:58,250
+large data set and here's the software
+that I'm using.
+
+123
+00:05:58,250 --> 00:06:01,305
+I'm using Mac OS X 10.6.3.
+
+124
+00:06:02,500 --> 00:06:08,180
+And even better question is to use a title
+that's a little bit more succinct.
+
+125
+00:06:08,180 --> 00:06:12,460
+So, here you lead off again, the function
+that you're asking about, you
+
+126
+00:06:12,460 --> 00:06:18,580
+say okay, I'm asking about R 2.15 and
+again it's on this operating system.
+
+127
+00:06:18,580 --> 00:06:22,370
+And then I very succinctly describe seg
+fault on large data frame.
+
+128
+00:06:22,370 --> 00:06:26,180
+So by focusing on the very specific
+details, it means people
+
+129
+00:06:26,180 --> 00:06:29,110
+can jump very quickly to the answers that
+you might need.
+
+130
+00:06:29,110 --> 00:06:32,340
+So there's similar sorts of questions,
+specific details you would
+
+131
+00:06:32,340 --> 00:06:35,820
+want to give when asking questions about
+data analysis problems.
+
+132
+00:06:35,820 --> 00:06:40,380
+So, in general, the more specific you are
+the faster your answer will come.
+
+133
+00:06:42,060 --> 00:06:43,400
+So there's some etiquette that we would
+like
+
+134
+00:06:43,400 --> 00:06:46,070
+to encourage in terms of using these
+forums.
+
+135
+00:06:46,070 --> 00:06:50,770
+Or in, in just using help sites in general
+not necessarily the ones in these forums.
+
+136
+00:06:50,770 --> 00:06:53,350
+So, again, describe the goal that you
+have.
+
+137
+00:06:53,350 --> 00:06:55,800
+What's the question you're trying to
+answer?
+
+138
+00:06:55,800 --> 00:06:56,840
+Be very explicit.
+
+139
+00:06:57,840 --> 00:07:00,050
+Try to provide the minimum amount of
+information.
+
+140
+00:07:00,050 --> 00:07:03,300
+If you, you provide way to much
+information it's very hard for
+
+141
+00:07:03,300 --> 00:07:06,580
+people to filter through and figure out
+what their real problem is.
+
+142
+00:07:06,580 --> 00:07:11,320
+Being polite never hurt anybody and will
+often get your answer more quickly.
+
+143
+00:07:11,320 --> 00:07:12,930
+And then follow up and post solutions.
+
+144
+00:07:12,930 --> 00:07:14,900
+So if you post a question and somebody
+ends up giving
+
+145
+00:07:14,900 --> 00:07:18,600
+you the answer on Stack Overflow instead
+of on the course website.
+
+146
+00:07:18,600 --> 00:07:21,990
+It's the polite thing to do, post that you
+found on the course
+
+147
+00:07:21,990 --> 00:07:25,460
+website so that people can search it and
+find that answer as well.
+
+148
+00:07:25,460 --> 00:07:29,170
+Please, please use the forums rather than
+using personal emails.
+
+149
+00:07:29,170 --> 00:07:32,570
+We are very excited about trying to help
+you learn about data science.
+
+150
+00:07:32,570 --> 00:07:35,150
+But it's very easy to overwhelm the
+inboxes of your
+
+151
+00:07:35,150 --> 00:07:39,970
+instructors or community TAs if you all
+start sending emails simultaneously.
+
+152
+00:07:39,970 --> 00:07:42,120
+When there's a typo in the assignment,
+please report it on the
+
+153
+00:07:42,120 --> 00:07:44,630
+forums and we will address it as fast as
+we possibly can.
+
+154
+00:07:46,210 --> 00:07:49,970
+Some things that you shouldn't necessarily
+do are immediately
+
+155
+00:07:49,970 --> 00:07:52,180
+assume you found a bug in a major program.
+
+156
+00:07:52,180 --> 00:07:56,070
+So, saying you found a bug in R and that's
+why things aren't working.
+
+157
+00:07:56,070 --> 00:07:59,250
+Groveling as a substitute for your work is
+obviously not a great thing.
+
+158
+00:07:59,250 --> 00:08:01,580
+So begging other people to do your work
+for you.
+
+159
+00:08:02,640 --> 00:08:08,030
+Please don't post homework questions on
+mailing lists or on the course forums.
+
+160
+00:08:08,030 --> 00:08:11,760
+If you post the questions or the answers
+on the forums
+
+161
+00:08:11,760 --> 00:08:14,190
+it, it sort of takes away from the
+experience of everybody else.
+
+162
+00:08:15,620 --> 00:08:19,030
+Please don't e-mail a lot of different
+lists all simultaneously.
+
+163
+00:08:19,030 --> 00:08:21,840
+Try to figure out what the right mailing
+list is and only e-mail that.
+
+164
+00:08:23,530 --> 00:08:29,160
+And then, you don't want to ask general
+data analysis questions on R forums.
+
+165
+00:08:29,160 --> 00:08:31,230
+Those are often redirected back to
+courses.
+
+166
+00:08:31,230 --> 00:08:34,680
+So try to keep those who are R course
+forums, where hopefully there'll
+
+167
+00:08:34,680 --> 00:08:38,000
+be a big group of interested people all
+trying to answer the same questions.
+
+168
+00:08:39,500 --> 00:08:41,350
+So the transfer of these slides go to
+
+169
+00:08:41,350 --> 00:08:45,170
+Roger Payne who's another instructor in
+the course track.
+
+170
+00:08:45,170 --> 00:08:46,600
+He has these getting help videos.
+
+171
+00:08:46,600 --> 00:08:48,870
+That's a link to his video on YouTube and
+it was
+
+172
+00:08:48,870 --> 00:08:52,090
+inspired by Eric Raymond's lecture, How to
+ask questions the smart way.
+

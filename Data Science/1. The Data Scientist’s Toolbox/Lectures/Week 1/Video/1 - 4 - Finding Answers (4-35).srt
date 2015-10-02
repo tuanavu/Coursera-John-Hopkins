@@ -1,0 +1,447 @@
+1
+00:00:00,510 --> 00:00:05,140
+This is a brief follow-up video to getting
+help and it's about finding answers.
+
+2
+00:00:05,140 --> 00:00:06,620
+The reason why there are two videos about
+this
+
+3
+00:00:06,620 --> 00:00:09,070
+is because it's such a critical skill in
+data science.
+
+4
+00:00:09,070 --> 00:00:11,230
+So you can see one of the three
+fundamental sort of,
+
+5
+00:00:11,230 --> 00:00:16,210
+skills you see in the Venn diagram here is
+Hacking Skills.
+
+6
+00:00:16,210 --> 00:00:17,710
+And the reason why it's one of the
+
+7
+00:00:17,710 --> 00:00:20,210
+three fundamental skill is because almost
+of none
+
+8
+00:00:20,210 --> 00:00:22,870
+of the knowledge that you will need is
+
+9
+00:00:22,870 --> 00:00:25,680
+already sort of set in standardized text
+books.
+
+10
+00:00:25,680 --> 00:00:29,160
+It's often scattered in a bunch of
+different places and you have to be
+
+11
+00:00:29,160 --> 00:00:31,940
+able to sort of synthesize it or find the
+information that you need about.
+
+12
+00:00:31,940 --> 00:00:36,605
+Whether it's about which data set you need
+to be using, or the statistical analysis
+
+13
+00:00:36,605 --> 00:00:40,330
+you need to be doing, or the R Package
+that you need to be using.
+
+14
+00:00:40,330 --> 00:00:42,590
+All of this is sort of scattered around,
+and you have to be willing
+
+15
+00:00:42,590 --> 00:00:46,090
+to do a little bit of hard work and elbow
+grease to find it yourself.
+
+16
+00:00:46,090 --> 00:00:47,570
+Obviously we'll tell you as much as we can
+
+17
+00:00:47,570 --> 00:00:50,770
+in lectures, but we're necessarily limited
+by the amount of
+
+18
+00:00:50,770 --> 00:00:52,410
+time that we can lecture every week, and
+so
+
+19
+00:00:52,410 --> 00:00:54,690
+it's important to be able to find that
+information yourself.
+
+20
+00:00:56,340 --> 00:00:58,790
+So key, some key characteristics packers
+are that
+
+21
+00:00:58,790 --> 00:01:00,470
+they're willing to go out and find the
+answers
+
+22
+00:01:00,470 --> 00:01:04,450
+on their own even if it takes a little bit
+of time or a little bit of effort.
+
+23
+00:01:04,450 --> 00:01:06,490
+They're knowledgeable about where to find
+those answers
+
+24
+00:01:06,490 --> 00:01:09,070
+whether its Google, or stack over glow, or
+cat.
+
+25
+00:01:09,070 --> 00:01:13,160
+Cross validated or a message fo history of
+mailing lists.
+
+26
+00:01:14,360 --> 00:01:17,340
+They're unintimidated by new data types or
+packages.
+
+27
+00:01:17,340 --> 00:01:20,930
+It's very common as a data scientist to be
+thrown a new kind of
+
+28
+00:01:20,930 --> 00:01:25,110
+data or a new kind of Our package that you
+need to learn very quickly
+
+29
+00:01:25,110 --> 00:01:29,500
+to be able to analyze the data to being
+unintimidated by that is important
+
+30
+00:01:29,500 --> 00:01:33,230
+and then being unafraid to say that you
+don't know the answer to a question.
+
+31
+00:01:33,230 --> 00:01:36,350
+And so a key characteristic I would say
+the way
+
+32
+00:01:36,350 --> 00:01:39,440
+to summarize it up is being alive but
+relentless here.
+
+33
+00:01:39,440 --> 00:01:41,020
+Going after the answer and you just trying
+to
+
+34
+00:01:41,020 --> 00:01:44,210
+find it But you're very polite while doing
+it.
+
+35
+00:01:44,210 --> 00:01:45,320
+And so Google knows this too.
+
+36
+00:01:45,320 --> 00:01:48,360
+In their hiring practices they're looking
+for these sort of characteristics.
+
+37
+00:01:48,360 --> 00:01:51,770
+The kind of people that will go after
+these sorts of
+
+38
+00:01:51,770 --> 00:01:54,490
+things as it's described in this article,
+I'm linked to here.
+
+39
+00:01:56,160 --> 00:01:58,047
+[SOUND] So an important question is where
+
+40
+00:01:58,047 --> 00:02:00,500
+to look for, for different types of
+questions.
+
+41
+00:02:00,500 --> 00:02:04,180
+So for our programming you might want to
+go
+
+42
+00:02:04,180 --> 00:02:06,420
+straight to the the archive of the class
+forums.
+
+43
+00:02:06,420 --> 00:02:10,970
+Where the class you're taking will focus
+on very specific questions or functions.
+
+44
+00:02:10,970 --> 00:02:13,550
+And there'll be a large group of
+interested people.
+
+45
+00:02:13,550 --> 00:02:15,190
+You could read the manual or help files
+
+46
+00:02:15,190 --> 00:02:17,550
+like I showed you in the getting help
+lecture.
+
+47
+00:02:17,550 --> 00:02:18,680
+You can search on the web.
+
+48
+00:02:18,680 --> 00:02:21,400
+That's actually one of the best ways to do
+it.
+
+49
+00:02:21,400 --> 00:02:23,550
+You can ask a skilled friend.
+
+50
+00:02:23,550 --> 00:02:25,840
+That's even better if you've got a person
+that you
+
+51
+00:02:25,840 --> 00:02:27,830
+know that already is a bit of a data
+scientist.
+
+52
+00:02:27,830 --> 00:02:29,540
+They can often help you out.
+
+53
+00:02:29,540 --> 00:02:32,250
+And then you can post to the class forums
+and try to get your answers.
+
+54
+00:02:32,250 --> 00:02:34,620
+Remember to be specific with your
+questions.
+
+55
+00:02:34,620 --> 00:02:36,840
+You can also post to forums outside of the
+class.
+
+56
+00:02:36,840 --> 00:02:39,500
+The R Mailing List or Stackoverflow, if
+you have R questions.
+
+57
+00:02:40,640 --> 00:02:44,680
+For data analysis or statistics type
+questions, you want to go to start
+
+58
+00:02:44,680 --> 00:02:47,800
+again with the class forums, and then go
+to the web or to friends.
+
+59
+00:02:48,800 --> 00:02:51,270
+And then there's another outside forum
+called CrossValidated
+
+60
+00:02:51,270 --> 00:02:53,560
+where you can ask these types of
+questions.
+
+61
+00:02:53,560 --> 00:02:56,370
+Brother software you might have to go to
+software specific websites.
+
+62
+00:02:56,370 --> 00:02:59,420
+So forget HUB, they have a lot of
+tutorials and
+
+63
+00:02:59,420 --> 00:03:01,780
+nice information that you can use to get
+answers there.
+
+64
+00:03:03,860 --> 00:03:06,410
+[SOUND] So an important point to know is
+that Googling
+
+65
+00:03:06,410 --> 00:03:09,590
+data science questions isn't always the
+easiest thing in the world.
+
+66
+00:03:09,590 --> 00:03:12,340
+So, the best place to start with if you
+
+67
+00:03:12,340 --> 00:03:14,810
+have a pretty general question is often in
+the forums.
+
+68
+00:03:14,810 --> 00:03:18,090
+And if people can direct you to where you
+should be searching outside of the forums.
+
+69
+00:03:19,580 --> 00:03:23,430
+Keep in mind that Stackoverflow with the
+tag R
+
+70
+00:03:23,430 --> 00:03:26,170
+is a really good place to get information
+about R.
+
+71
+00:03:26,170 --> 00:03:30,810
+And, so, you have to use this tag because
+if you just use
+
+72
+00:03:30,810 --> 00:03:34,300
+the letter R, it obviously is, sometimes,
+a little bit hard to search for.
+
+73
+00:03:35,406 --> 00:03:36,918
+You can also try the R mailing list
+
+74
+00:03:36,918 --> 00:03:40,270
+for software questions or CrossValidated
+for more general questions.
+
+75
+00:03:41,530 --> 00:03:43,250
+Usually what I've found is that if I'm
+going
+
+76
+00:03:43,250 --> 00:03:46,190
+to work in Google, searching Google, I use
+usually type
+
+77
+00:03:46,190 --> 00:03:50,080
+something like the data type and then data
+analysis or
+
+78
+00:03:50,080 --> 00:03:53,300
+I type the data type and then the R
+package.
+
+79
+00:03:53,300 --> 00:03:55,340
+I found that data type R package often
+works a
+
+80
+00:03:55,340 --> 00:03:58,680
+little bit better than data type, data
+analysis when Googling things.
+
+81
+00:03:59,740 --> 00:04:01,530
+Another thing to keep in mind is that data
+
+82
+00:04:01,530 --> 00:04:04,340
+analysis or data science is often called
+something different depending
+
+83
+00:04:04,340 --> 00:04:06,280
+on what kind of data you are looking at,
+
+84
+00:04:06,280 --> 00:04:10,010
+so for example medical data it might be
+called biostatistics.
+
+85
+00:04:10,010 --> 00:04:12,880
+For data from the web it might be data
+science.
+
+86
+00:04:12,880 --> 00:04:15,880
+For data in computer vision it might be
+machine learning
+
+87
+00:04:15,880 --> 00:04:19,260
+or natural language processing for data
+from text and so on.
+
+88
+00:04:19,260 --> 00:04:22,980
+So, knowing what the right word to Google
+is, is often half the battle.
+
+89
+00:04:22,980 --> 00:04:25,530
+And so, you can often find that out by
+posting to forums and
+
+90
+00:04:25,530 --> 00:04:27,880
+people will let you know what the right
+word to be googling is.
+
+91
+00:04:28,950 --> 00:04:31,780
+[SOUND] Again the credits for this go to
+Roger's Getting Help Video.
+
+92
+00:04:31,780 --> 00:04:35,230
+And it was inspired by Eric Raymond's How
+to Ask Questions the Right Way.
+

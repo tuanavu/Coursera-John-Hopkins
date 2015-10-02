@@ -1,0 +1,496 @@
+1
+00:00:00,710 --> 00:00:02,010
+In week two of course, we're going to be
+
+2
+00:00:02,010 --> 00:00:03,560
+covering a bunch of software that you're
+going
+
+3
+00:00:03,560 --> 00:00:06,080
+to install that will constitute the data
+scientist's
+
+4
+00:00:06,080 --> 00:00:08,500
+toolbox, as we described it for this
+course's track.
+
+5
+00:00:08,500 --> 00:00:12,650
+So the first question you might ask
+yourself is, what software do you need?
+
+6
+00:00:12,650 --> 00:00:14,940
+Well to know what, software you need, you
+have to
+
+7
+00:00:14,940 --> 00:00:18,400
+know what exactly a data scientist is
+going to do.
+
+8
+00:00:18,400 --> 00:00:20,980
+So, in this course sequence we're going to
+talk
+
+9
+00:00:20,980 --> 00:00:23,110
+about all the different components of
+being a data scientist.
+
+10
+00:00:23,110 --> 00:00:27,140
+So we're going to start with defining a
+question of interest, and then
+
+11
+00:00:27,140 --> 00:00:31,430
+identifying the ideal data set try to
+ident, to answer that question.
+
+12
+00:00:31,430 --> 00:00:33,720
+Determining if that data is even
+accessible, a
+
+13
+00:00:33,720 --> 00:00:37,300
+lot of times the ideal dataset isn't even
+available.
+
+14
+00:00:37,300 --> 00:00:40,420
+Then ways that you can go out and actually
+obtain the data whether it's from a
+
+15
+00:00:40,420 --> 00:00:43,060
+database, or from a website, cleaning the
+data
+
+16
+00:00:43,060 --> 00:00:46,200
+up so that it can be processed and
+analyzed.
+
+17
+00:00:46,200 --> 00:00:48,210
+Performing some sort of exploratory
+analysis,
+
+18
+00:00:48,210 --> 00:00:50,200
+including making plots and clusterings so
+you
+
+19
+00:00:50,200 --> 00:00:55,400
+can identify patterns that you didn't know
+about before hand in the data set.
+
+20
+00:00:55,400 --> 00:00:59,150
+Performing statistical prediction or
+modeling to try to, build a sort of
+
+21
+00:00:59,150 --> 00:01:02,480
+an intuition about what's going to happen
+in the next sample you might take.
+
+22
+00:01:02,480 --> 00:01:04,581
+Interpreting your results, challenging
+them.
+
+23
+00:01:04,581 --> 00:01:07,470
+Then synthesizing them and writing them up
+in
+
+24
+00:01:07,470 --> 00:01:10,132
+reproducible ways that can be shared with
+other people.
+
+25
+00:01:10,132 --> 00:01:12,620
+Finally, we're going to talk about
+distributing results
+
+26
+00:01:12,620 --> 00:01:15,960
+through things like interacting graphics,
+also through
+
+27
+00:01:15,960 --> 00:01:18,670
+right ups and presentations, and finally
+through
+
+28
+00:01:18,670 --> 00:01:21,790
+interactive apps built on top of R.
+
+29
+00:01:21,790 --> 00:01:24,680
+So the main workhorse of data science in
+terms
+
+30
+00:01:24,680 --> 00:01:27,720
+of this data science track is the R
+programming language.
+
+31
+00:01:27,720 --> 00:01:29,310
+There are other alternative languages that
+are
+
+32
+00:01:29,310 --> 00:01:31,500
+also really great for data science, but
+we're
+
+33
+00:01:31,500 --> 00:01:35,440
+going to be focusing on R, since it's one
+of the most widely used languages.
+
+34
+00:01:35,440 --> 00:01:39,880
+And it's widely supported by a large group
+of developers.
+
+35
+00:01:39,880 --> 00:01:43,060
+Who can contribute new packages all the
+time
+
+36
+00:01:43,060 --> 00:01:46,160
+that can improve and extend the
+functionality of R.
+
+37
+00:01:46,160 --> 00:01:49,170
+We'll be installing this in the second
+week of the class.
+
+38
+00:01:49,170 --> 00:01:50,700
+We'll do most of our coding in RStudio.
+
+39
+00:01:50,700 --> 00:01:55,510
+RStudio is an Integrated Development
+Environment, an IDE for R.
+
+40
+00:01:55,510 --> 00:01:57,720
+It's actually one of the best IDE's I
+think for
+
+41
+00:01:57,720 --> 00:02:01,200
+many other languages as well in terms of
+data science.
+
+42
+00:02:02,370 --> 00:02:07,000
+The R IDE is free as well just like the
+language R, and so we
+
+43
+00:02:07,000 --> 00:02:10,120
+will be downloading this IDE and setting
+it up again the second week of class.
+
+44
+00:02:11,470 --> 00:02:12,820
+The interface looks something like this.
+
+45
+00:02:12,820 --> 00:02:14,570
+And we'll talk a lot more about this in
+the
+
+46
+00:02:14,570 --> 00:02:17,160
+second week and later on in the rest of
+the class.
+
+47
+00:02:17,160 --> 00:02:21,700
+But you can see here in the top left-hand
+corner I've got a file.
+
+48
+00:02:21,700 --> 00:02:24,660
+So this is a new .R file that's going to
+
+49
+00:02:24,660 --> 00:02:26,780
+contain some code that we're going to be
+writing in.
+
+50
+00:02:26,780 --> 00:02:29,330
+So we can write that code, here in the
+file
+
+51
+00:02:29,330 --> 00:02:32,750
+at the prompt and then down here, you see
+a console.
+
+52
+00:02:32,750 --> 00:02:34,810
+So we'll be entering sort of a commands
+
+53
+00:02:34,810 --> 00:02:37,860
+at the command line down here in this
+console.
+
+54
+00:02:37,860 --> 00:02:39,700
+And then over here you can see other
+
+55
+00:02:39,700 --> 00:02:41,720
+information you might be interested in
+looking at.
+
+56
+00:02:41,720 --> 00:02:45,830
+See plots you recently made, the packages
+that you have loaded,
+
+57
+00:02:45,830 --> 00:02:49,399
+or help files for specific functions that
+you might be interested in.
+
+58
+00:02:50,650 --> 00:02:53,240
+There are a lot of other really nice
+functions that come
+
+59
+00:02:53,240 --> 00:02:56,830
+with Rstudio, and we'll be talking about
+those more throughout the class.
+
+60
+00:02:58,560 --> 00:03:00,720
+The primary type of file that we'll be
+interacting with,
+
+61
+00:03:00,720 --> 00:03:03,610
+for the most part in this class, is an R
+script.
+
+62
+00:03:03,610 --> 00:03:06,665
+So, an R script is a file with the
+extension
+
+63
+00:03:06,665 --> 00:03:09,830
+.R, and so it's just a, actually a text
+file.
+
+64
+00:03:09,830 --> 00:03:14,830
+Except the text file contains bits of R
+code, so here it's you can see a comment.
+
+65
+00:03:14,830 --> 00:03:18,590
+So this isn't actually executed but R you
+could include
+
+66
+00:03:18,590 --> 00:03:21,480
+that so that people can understand what's
+happening in the code.
+
+67
+00:03:21,480 --> 00:03:23,800
+And then there're things like functions
+and so forth which
+
+68
+00:03:23,800 --> 00:03:26,070
+we'll be talking about a lot more when
+we're coding.
+
+69
+00:03:26,070 --> 00:03:29,220
+If this seems intimidating to look at this
+function right now
+
+70
+00:03:29,220 --> 00:03:31,110
+you should worry about it when you get
+through R programming.
+
+71
+00:03:31,110 --> 00:03:33,810
+You'll be a wizard and be able to do
+things much more complicated than this.
+
+72
+00:03:35,430 --> 00:03:37,890
+The other thing that we'll be using is R
+markdown documents.
+
+73
+00:03:37,890 --> 00:03:42,430
+So, reproducible research involves
+creating documents that can be reproduced.
+
+74
+00:03:42,430 --> 00:03:44,470
+In other words, they can be rerun and
+produce the
+
+75
+00:03:44,470 --> 00:03:47,650
+exact same numbers that you got when you
+did your analysis.
+
+76
+00:03:47,650 --> 00:03:50,860
+And the primary vehicle for doing that is
+through markdown and R markdown.
+
+77
+00:03:50,860 --> 00:03:54,352
+So this is a file with an extension ,RMD
+and
+
+78
+00:03:54,352 --> 00:04:00,030
+this .RMD file has a very structured
+format of text file.
+
+79
+00:04:00,030 --> 00:04:03,370
+And so we'll talk a lot more about what
+that format is later but you
+
+80
+00:04:03,370 --> 00:04:09,080
+could take this structured file and you
+can knit it to html with this button here.
+
+81
+00:04:09,080 --> 00:04:13,600
+And you actually create an html file that
+will actually be formatted very nicely.
+
+82
+00:04:13,600 --> 00:04:17,630
+So for example, what you type in text
+looks like this, and
+
+83
+00:04:17,630 --> 00:04:21,030
+it turns into a nice bulleted list in
+HTML, once you knit HTML.
+
+84
+00:04:21,030 --> 00:04:23,940
+And we'll talk a lot more about how that
+file works later in the class.
+
+85
+00:04:25,700 --> 00:04:27,130
+We're going to talk about how we are
+going to
+
+86
+00:04:27,130 --> 00:04:30,430
+do distributed version control with Github
+and Git.
+
+87
+00:04:30,430 --> 00:04:32,550
+So, part of this class will be setting
+
+88
+00:04:32,550 --> 00:04:35,380
+up your Github account and creating a
+portfolio, of
+
+89
+00:04:35,380 --> 00:04:36,940
+all the different things that you do
+throughout the
+
+90
+00:04:36,940 --> 00:04:39,605
+course track, that then you can share with
+employers.
+
+91
+00:04:39,605 --> 00:04:42,600
+Or you can share and contribute to other
+projects, so that
+
+92
+00:04:42,600 --> 00:04:44,870
+you can get your name out there in the
+data science community.
+
+93
+00:04:46,390 --> 00:04:48,050
+We're going to running most of the
+commands
+
+94
+00:04:48,050 --> 00:04:50,750
+from the shell or from the command line
+interface.
+
+95
+00:04:50,750 --> 00:04:53,560
+So this is a command line interface, it
+doesn't look like much right here.
+
+96
+00:04:53,560 --> 00:04:56,710
+You can see that there's a prompt up her
+in the top left.
+
+97
+00:04:56,710 --> 00:04:59,350
+And we're going to be entering commands as
+text prompts.
+
+98
+00:04:59,350 --> 00:05:01,510
+And those commands will then execute,
+allowing
+
+99
+00:05:01,510 --> 00:05:03,130
+the programs that we're going to be
+talking about.
+
+100
+00:05:03,130 --> 00:05:05,410
+So, there's a brief tour of all the tools
+
+101
+00:05:05,410 --> 00:05:06,700
+that we're going to be using in this
+class.
+

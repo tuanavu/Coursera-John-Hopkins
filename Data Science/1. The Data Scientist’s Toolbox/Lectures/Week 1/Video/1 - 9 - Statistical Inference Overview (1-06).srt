@@ -1,0 +1,93 @@
+1
+00:00:00,350 --> 00:00:03,530
+Statistical Inference is going to be a
+course that covers many of
+
+2
+00:00:03,530 --> 00:00:05,500
+the foundational ideas that are involved
+
+3
+00:00:05,500 --> 00:00:09,410
+with extracting generalizable information
+from data.
+
+4
+00:00:09,410 --> 00:00:12,490
+And so, the course will cover things like
+basic probability,
+
+5
+00:00:12,490 --> 00:00:16,510
+likelihoods common distributions,
+confidence intervals,
+
+6
+00:00:16,510 --> 00:00:19,830
+hypothesis tests, bootstrapping and power.
+
+7
+00:00:19,830 --> 00:00:21,530
+These are the sort of fundamental ideas
+that you
+
+8
+00:00:21,530 --> 00:00:24,175
+often hear coming up when people are
+reporting data analysis.
+
+9
+00:00:25,720 --> 00:00:28,140
+So, for example, we'll talk about sort of
+the
+
+10
+00:00:28,140 --> 00:00:34,040
+way that you model mathematically coin
+flips or proportions.
+
+11
+00:00:34,040 --> 00:00:37,360
+We'll also talk a little bit about how you
+model more continuous
+
+12
+00:00:37,360 --> 00:00:39,670
+distributions, things like, with the
+normal
+
+13
+00:00:39,670 --> 00:00:42,230
+distribution which you've probably heard
+about.
+
+14
+00:00:42,230 --> 00:00:46,110
+As a way to measure sort of the
+variability about a large
+
+15
+00:00:46,110 --> 00:00:49,900
+number of different things including IQ
+and height and things like that.
+
+16
+00:00:51,090 --> 00:00:53,030
+And then we'll talk about things like
+bootstrapping, where you
+
+17
+00:00:53,030 --> 00:00:58,560
+actually use the data itself to sort of
+create measures of
+
+18
+00:00:58,560 --> 00:01:02,170
+variability that you can use to sort of
+decide how generalizable
+
+19
+00:01:02,170 --> 00:01:05,380
+are the answers that you get from
+performing any particular analysis.
+

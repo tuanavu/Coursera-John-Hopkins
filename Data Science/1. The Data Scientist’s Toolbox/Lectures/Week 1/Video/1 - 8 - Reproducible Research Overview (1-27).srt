@@ -1,0 +1,132 @@
+1
+00:00:00,620 --> 00:00:03,860
+Reproducible research is another one of or
+more unique courses.
+
+2
+00:00:03,860 --> 00:00:08,000
+So reproducible research is concerned with
+creating code
+
+3
+00:00:08,000 --> 00:00:11,510
+and documents that will completely
+reproduce all of the
+
+4
+00:00:11,510 --> 00:00:13,900
+analysis that you've done in a transparent
+way
+
+5
+00:00:13,900 --> 00:00:16,390
+so that you can communicate that to other
+people.
+
+6
+00:00:16,390 --> 00:00:19,590
+It's one of the most fundamental
+components of being a data scientist.
+
+7
+00:00:19,590 --> 00:00:21,820
+But it's often glossed over as a sort of
+
+8
+00:00:21,820 --> 00:00:26,100
+a side component of many other programs of
+data science.
+
+9
+00:00:26,100 --> 00:00:28,030
+So we're going to talk about in the
+
+10
+00:00:28,030 --> 00:00:30,300
+reproducible research course, the
+structure of a data
+
+11
+00:00:30,300 --> 00:00:34,590
+analysis, how do you set it up, how do you
+organize it and put it together.
+
+12
+00:00:34,590 --> 00:00:37,010
+We're going to talk about some of the
+components of reproducible
+
+13
+00:00:37,010 --> 00:00:42,060
+research in terms of programming which
+include Markdown, LaTex, R Markdown.
+
+14
+00:00:42,060 --> 00:00:45,510
+And then we're going to talk a little bit
+about a unique idea called evidence-based
+
+15
+00:00:45,510 --> 00:00:47,410
+data analysis, doing data analysis based
+on
+
+16
+00:00:47,410 --> 00:00:49,476
+what's best practices in the field right
+now.
+
+17
+00:00:49,476 --> 00:00:52,708
+And then ways that you can publish your
+
+18
+00:00:52,708 --> 00:00:58,276
+data outside of your own organization,
+things like RPubs.
+
+19
+00:00:58,276 --> 00:01:00,334
+So for example, we're going to talk about
+the steps
+
+20
+00:01:00,334 --> 00:01:02,860
+in a data analysis or in a data science
+problem.
+
+21
+00:01:02,860 --> 00:01:05,510
+And so, you have to go all the way from
+defining the questions
+
+22
+00:01:05,510 --> 00:01:09,190
+to creating sort of reproducible code that
+you can share with other people.
+
+23
+00:01:09,190 --> 00:01:12,610
+And so, some of these steps are covered by
+different parts of
+
+24
+00:01:12,610 --> 00:01:16,660
+the class, and so reproducible research
+synthesizes where those parts go together.
+
+25
+00:01:17,970 --> 00:01:21,860
+We'll also talk about which files are
+components of a data analysis.
+
+26
+00:01:21,860 --> 00:01:23,840
+Everything from the sort of a raw data to
+the
+
+27
+00:01:23,840 --> 00:01:27,430
+exploratory figures to sort the final
+analysis that you'll be performing.
+

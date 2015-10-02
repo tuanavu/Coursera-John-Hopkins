@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:03,859
+[BLANK_AUDIO]
+
+2
+00:00:03,859 --> 00:00:07,740
+In this video, I'm going to talk about how
+to install RStudio for the Mac.
+
+3
+00:00:07,740 --> 00:00:11,028
+It's a very simple process and only
+involves just a few steps.
+
+4
+00:00:11,028 --> 00:00:12,530
+The one thing I'll say though is that you
+
+5
+00:00:12,530 --> 00:00:17,250
+must have R already installed before you
+can install RStudio.
+
+6
+00:00:17,250 --> 00:00:19,187
+So, once you've installed R already.
+
+7
+00:00:19,187 --> 00:00:22,351
+You can go to the RStudio website, which
+is Rstudio.com.
+
+8
+00:00:22,351 --> 00:00:25,929
+[SOUND].
+
+9
+00:00:25,929 --> 00:00:28,349
+And you can see down here on the lower
+left, there's
+
+10
+00:00:28,349 --> 00:00:32,100
+a green button that that directs you to
+kind of download RStudio.
+
+11
+00:00:32,100 --> 00:00:35,690
+So, here there's two versions of RStudio,
+studio that you can download.
+
+12
+00:00:35,690 --> 00:00:38,951
+One is for the desktop and one is for the
+server down here.
+
+13
+00:00:38,951 --> 00:00:41,635
+Now you, we're not going to be talking
+about the server version at all here
+
+14
+00:00:41,635 --> 00:00:45,263
+so, you just want to download the desktop
+version, so that's this button right here.
+
+15
+00:00:45,263 --> 00:00:47,600
+So the website should detect automatically
+what
+
+16
+00:00:47,600 --> 00:00:49,652
+type of operating system your running, so
+
+17
+00:00:49,652 --> 00:00:53,590
+here I'm running a Mac, and so it
+recommends this Mac OS X version.
+
+18
+00:00:53,590 --> 00:00:56,544
+So, I'm just going to download that right
+now.
+
+19
+00:00:56,544 --> 00:00:58,262
+And, you'll see the download meter go.
+
+20
+00:00:58,262 --> 00:01:00,849
+[BLANK_AUDIO]
+
+21
+00:01:00,849 --> 00:01:04,771
+Once that's finished downloading you go to
+the Downloads folder, and it should be
+
+22
+00:01:04,771 --> 00:01:08,240
+the most left thing here so we're just
+going to click on it to install it.
+
+23
+00:01:11,350 --> 00:01:13,570
+And then just like any other Mac
+application, all you have
+
+24
+00:01:13,570 --> 00:01:16,020
+to do to install is drag it into the
+Applications folder.
+
+25
+00:01:16,020 --> 00:01:16,970
+So, I'm going to do that right now.
+
+26
+00:01:19,670 --> 00:01:20,680
+And it's already done.
+
+27
+00:01:20,680 --> 00:01:25,712
+So, I can just go into the Applications
+folder here and find RStudio.
+
+28
+00:01:26,870 --> 00:01:28,182
+Double-click on it [SOUND].
+
+29
+00:01:28,182 --> 00:01:31,130
+I'll say yes, I want to open this
+application.
+
+30
+00:01:33,800 --> 00:01:34,420
+And there you go.
+
+31
+00:01:34,420 --> 00:01:35,340
+You're running RStudio.
+

@@ -1,0 +1,142 @@
+1
+00:00:00,700 --> 00:00:03,040
+This is an overview of practical machine
+learning.
+
+2
+00:00:03,040 --> 00:00:04,570
+There are a large number of machine
+learning
+
+3
+00:00:04,570 --> 00:00:07,270
+classes out there, and they are often very
+good.
+
+4
+00:00:07,270 --> 00:00:09,330
+So, the focus of this class will be
+
+5
+00:00:09,330 --> 00:00:12,290
+primarily on hand-drawn application of
+machine learning in R.
+
+6
+00:00:12,290 --> 00:00:16,240
+So, the idea being that we'll try to focus
+on the R packages and the
+
+7
+00:00:16,240 --> 00:00:18,050
+ideas that will allow you to actually take
+
+8
+00:00:18,050 --> 00:00:20,800
+data and perform machine learning on those
+data.
+
+9
+00:00:20,800 --> 00:00:24,690
+We'll also talk a little bit conceptually
+about each of these prediction
+
+10
+00:00:24,690 --> 00:00:28,090
+methods work and maybe some of the cases
+where there might be trouble.
+
+11
+00:00:28,090 --> 00:00:30,990
+And then we'll point you to resources
+where you can learn more in depth about
+
+12
+00:00:30,990 --> 00:00:35,430
+the mathematical details or the really
+hardcore
+
+13
+00:00:35,430 --> 00:00:38,470
+computational underpaying of these
+methodologies if you're interested.
+
+14
+00:00:38,470 --> 00:00:41,070
+So the Practical Machine Learning Content.
+
+15
+00:00:41,070 --> 00:00:45,420
+We'll start with prediction study design,
+we'll talk about cross validation.
+
+16
+00:00:45,420 --> 00:00:49,282
+The caret package for prediction in R,
+some pre-processing.
+
+17
+00:00:49,282 --> 00:00:52,614
+Predicting what the variety of different
+ideas like regression and trees.
+
+18
+00:00:52,614 --> 00:00:56,240
+We'll talk about common ideas like
+boosting, bagging,
+
+19
+00:00:56,240 --> 00:00:59,670
+model blending, and a little bit about
+forecasting.
+
+20
+00:00:59,670 --> 00:01:01,300
+So here are some examples of things we'll
+cover.
+
+21
+00:01:01,300 --> 00:01:06,008
+We'll cover basic terms, like what are
+true positives and false positives?
+
+22
+00:01:06,008 --> 00:01:09,750
+What are true negatives and false
+negatives,
+
+23
+00:01:09,750 --> 00:01:12,730
+sensitivity and specificity, those sorts
+of things.
+
+24
+00:01:12,730 --> 00:01:14,660
+We'll also cover how to deal with
+correlated
+
+25
+00:01:14,660 --> 00:01:18,186
+predictors by preprocessing out data that
+had correlated predictors.
+
+26
+00:01:18,186 --> 00:01:20,610
+When we're moving them from the training
+data
+
+27
+00:01:20,610 --> 00:01:22,460
+set, and we'll talk a little bit about
+boosting.
+
+28
+00:01:22,460 --> 00:01:27,240
+So, this is a very more technical machine
+learning idea, but can be applied
+
+29
+00:01:27,240 --> 00:01:31,140
+quite simply using the functions of a R to
+really improve your prediction accuracy.
+

@@ -1,0 +1,201 @@
+1
+00:00:04,120 --> 00:00:07,900
+In this video, I'm going to to briefly
+show how you can install R on the Mac.
+
+2
+00:00:07,900 --> 00:00:09,110
+It's a very simple process.
+
+3
+00:00:09,110 --> 00:00:10,960
+You just have to, it only takes a few
+steps.
+
+4
+00:00:10,960 --> 00:00:14,200
+So the first thing you need to do is open
+your
+
+5
+00:00:14,200 --> 00:00:19,620
+web browser, and go to cran, says the
+comprehensive R archive network.
+
+6
+00:00:19,620 --> 00:00:23,520
+So you can just type in cran here, [SOUND]
+
+7
+00:00:23,520 --> 00:00:25,730
+and you'll see that, [COUGH] there are a
+number of options for you to
+
+8
+00:00:25,730 --> 00:00:28,820
+download here for different platforms, and
+so
+
+9
+00:00:28,820 --> 00:00:31,220
+we're going to download the Mac platform
+here.
+
+10
+00:00:31,220 --> 00:00:32,750
+So we go to download R for the Mac.
+
+11
+00:00:32,750 --> 00:00:37,460
+And you see that the latest version here,
+is version 3.0.3.
+
+12
+00:00:37,460 --> 00:00:39,720
+You want to download this package file
+here, so just click on
+
+13
+00:00:39,720 --> 00:00:43,710
+this, and you'll see that the download
+meter will start going.
+
+14
+00:00:43,710 --> 00:00:46,510
+And it might take a few minutes depending
+on the speed of your internet connection.
+
+15
+00:00:46,510 --> 00:00:47,693
+So just be patient.
+
+16
+00:00:47,693 --> 00:00:52,570
+[BLANK_AUDIO]
+
+17
+00:00:52,570 --> 00:00:54,437
+Okay, so its finished downloading.
+
+18
+00:00:54,437 --> 00:00:55,453
+[BLANK_AUDIO]
+
+19
+00:00:55,453 --> 00:00:57,833
+So I'm just going to open up here, the
+
+20
+00:00:57,833 --> 00:01:01,030
+package and you can see it'll start the
+installer.
+
+21
+00:01:01,030 --> 00:01:05,982
+Uh,and it'll guide you through all the
+steps you need to install R 3.0.3.
+
+22
+00:01:05,982 --> 00:01:08,480
+So, I'll click continue here, and this is
+
+23
+00:01:08,480 --> 00:01:10,480
+just the description of what's going to
+get installed.
+
+24
+00:01:10,480 --> 00:01:11,110
+Click continue.
+
+25
+00:01:12,680 --> 00:01:14,022
+The software license agreement is the
+
+26
+00:01:14,022 --> 00:01:16,288
+[UNKNOWN] new general public license
+version 2.
+
+27
+00:01:16,288 --> 00:01:19,860
+So you should agree to the license, after
+having read it of course.
+
+28
+00:01:21,230 --> 00:01:24,100
+And then, you can just click install here,
+and
+
+29
+00:01:24,100 --> 00:01:25,800
+you might have to type in your
+administrator password.
+
+30
+00:01:25,800 --> 00:01:27,075
+So, just go ahead and do that.
+
+31
+00:01:27,075 --> 00:01:30,870
+[SOUND] And it'll start installing the
+files on your computer.
+
+32
+00:01:30,870 --> 00:01:36,073
+[BLANK_AUDIO]
+
+33
+00:01:36,073 --> 00:01:37,238
+[SOUND].
+
+34
+00:01:37,238 --> 00:01:42,170
+Now that's finished, I can hit close, and
+then it'll be in my Applications folder.
+
+35
+00:01:42,170 --> 00:01:43,730
+So I can just go to my Applications
+folder,
+
+36
+00:01:43,730 --> 00:01:46,920
+which is right here, and there alphab,
+alphabetic order.
+
+37
+00:01:46,920 --> 00:01:48,791
+So, I'll just scroll down to R, and there
+it is.
+
+38
+00:01:48,791 --> 00:01:51,375
+[BLANK_AUDIO]
+
+39
+00:01:51,375 --> 00:01:52,330
+And there you have it.
+
+40
+00:01:52,330 --> 00:01:54,640
+You have an R, installed R on your
+computer,
+
+41
+00:01:54,640 --> 00:01:56,455
+and now, you can go ahead, you can just
+
+42
+00:01:56,455 --> 00:01:58,160
+use it directly, or if you want to you
+
+43
+00:01:58,160 --> 00:02:01,189
+can install, an interface like R studio,
+if you like.
+
+44
+00:02:01,189 --> 00:02:01,450
+[BLANK_AUDIO]
+

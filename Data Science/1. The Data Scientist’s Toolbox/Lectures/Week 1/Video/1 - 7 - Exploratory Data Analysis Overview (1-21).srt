@@ -1,0 +1,137 @@
+1
+00:00:01,350 --> 00:00:03,720
+This is a review of exploratory data
+analysis,
+
+2
+00:00:03,720 --> 00:00:06,010
+which is the next course in the course
+sequence.
+
+3
+00:00:07,240 --> 00:00:11,460
+Exploratory data analysis course will
+cover the principles of how do
+
+4
+00:00:11,460 --> 00:00:15,370
+you create analytic graphics, graphics
+that allow you to analyze data.
+
+5
+00:00:15,370 --> 00:00:18,540
+It'll talk about exploratory graphs, how
+you explore the data and get in,
+
+6
+00:00:18,540 --> 00:00:22,040
+create enough graphs to sort of figure out
+the structure of what's going on.
+
+7
+00:00:22,040 --> 00:00:24,280
+It will talk about the plotting systems in
+R.
+
+8
+00:00:24,280 --> 00:00:26,830
+So it'l talk about base plotting, lattice
+plotting
+
+9
+00:00:26,830 --> 00:00:31,280
+and then ggplot2 which is a popular newer
+platform.
+
+10
+00:00:31,280 --> 00:00:33,500
+It'll talk about hierarchical clustering,
+K-means
+
+11
+00:00:33,500 --> 00:00:35,560
+clustering and a little about dimension
+reduction.
+
+12
+00:00:35,560 --> 00:00:37,120
+These are all techniques that you can use
+to
+
+13
+00:00:37,120 --> 00:00:39,050
+get in and explore data as a first pass.
+
+14
+00:00:40,280 --> 00:00:41,830
+So, for example, it will talk about how to
+
+15
+00:00:41,830 --> 00:00:45,040
+use ggplot2 package to make plots like
+this, sort
+
+16
+00:00:45,040 --> 00:00:47,650
+of, sort of pretty smooth scatter plots
+that allow
+
+17
+00:00:47,650 --> 00:00:51,250
+you to like understand the relationship
+between different variables.
+
+18
+00:00:51,250 --> 00:00:53,860
+It will talk about the principles of
+analytic graphics,
+
+19
+00:00:53,860 --> 00:00:57,360
+so what are the principles that you need
+to create
+
+20
+00:00:57,360 --> 00:00:59,910
+graphics that'll be useful sort of to
+figure out what's
+
+21
+00:00:59,910 --> 00:01:02,150
+actually going on with the data you'll be
+working with.
+
+22
+00:01:03,230 --> 00:01:05,170
+And then it'll cover things like K-means
+clustering.
+
+23
+00:01:05,170 --> 00:01:07,280
+So the idea of how do we, if we have a
+bunch
+
+24
+00:01:07,280 --> 00:01:10,930
+of observations of collecting data on
+that, how we cluster them into
+
+25
+00:01:10,930 --> 00:01:13,830
+relative groups that are similar to each
+other as a method of
+
+26
+00:01:13,830 --> 00:01:16,940
+exploring the data and figuring out the
+structure of what's going on.
+
+27
+00:01:16,940 --> 00:01:17,980
+So this is just a couple of the
+
+28
+00:01:17,980 --> 00:01:20,320
+ideas that will be covered in exploratory
+data analysis.
+

@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:03,748
+[BLANK_AUDIO]
+
+2
+00:00:03,748 --> 00:00:05,508
+One of the things that we ask you to do in
+
+3
+00:00:05,508 --> 00:00:08,647
+this course a lot is to install software
+from various places.
+
+4
+00:00:08,647 --> 00:00:12,751
+However if you use OS X Mavericks you'll
+note it, you may notice that the default
+
+5
+00:00:12,751 --> 00:00:15,127
+installation has a couple of security
+settings that
+
+6
+00:00:15,127 --> 00:00:18,310
+prevent you from just installing software
+from the web.
+
+7
+00:00:18,310 --> 00:00:19,570
+This is meant to protect you from
+
+8
+00:00:19,570 --> 00:00:22,130
+installing kind of bad or malicious
+software.
+
+9
+00:00:22,130 --> 00:00:23,670
+But it can also prevent you from, from
+
+10
+00:00:23,670 --> 00:00:26,560
+installing things like RStudio and other
+pieces of software.
+
+11
+00:00:26,560 --> 00:00:29,050
+So in order to change those settings it's
+fairly simple.
+
+12
+00:00:29,050 --> 00:00:30,250
+You go to the Apple menu here.
+
+13
+00:00:30,250 --> 00:00:32,110
+And you click on System Preferences.
+
+14
+00:00:32,110 --> 00:00:36,640
+And then you want to go to Security &
+Privacy.
+
+15
+00:00:36,640 --> 00:00:38,510
+And by default you won't be able to make
+any changes
+
+16
+00:00:38,510 --> 00:00:41,360
+before you, unless you type in your kind
+of administrator password.
+
+17
+00:00:41,360 --> 00:00:45,246
+So I'm going to click on the lock here,
+type in my password, and now you
+
+18
+00:00:45,246 --> 00:00:47,323
+can see that there are a number of
+
+19
+00:00:47,323 --> 00:00:51,100
+options here for, for downloading and
+installing apps.
+
+20
+00:00:51,100 --> 00:00:54,630
+So the safest option is to only allow, you
+
+21
+00:00:54,630 --> 00:00:56,490
+know, applications from the Mac App Store,
+but there
+
+22
+00:00:56,490 --> 00:00:58,120
+are many things that we, you'll need to
+download
+
+23
+00:00:58,120 --> 00:01:00,120
+for this course that aren't in the Mac App
+Store.
+
+24
+00:01:00,120 --> 00:01:02,620
+So you need to click on the Anywhere
+button.
+
+25
+00:01:02,620 --> 00:01:06,250
+That will allow you to install software
+from the web or from anywhere.
+
+26
+00:01:06,250 --> 00:01:08,760
+And as long as it you, and it's your
+
+27
+00:01:08,760 --> 00:01:11,710
+responsibility to kind of, make sure that
+the software is okay.
+
+28
+00:01:11,710 --> 00:01:15,180
+And so you'll need this to install things
+like RStudio and GitHu, GitHub.
+
+29
+00:01:15,180 --> 00:01:16,870
+And other pieces of software.
+
+30
+00:01:16,870 --> 00:01:18,320
+So that's how you do that on the Mac.
+

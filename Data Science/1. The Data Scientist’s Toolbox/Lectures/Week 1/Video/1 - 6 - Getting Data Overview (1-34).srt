@@ -1,0 +1,155 @@
+1
+00:00:00,290 --> 00:00:02,640
+This is the Getting and Cleaning Data
+course overview.
+
+2
+00:00:02,640 --> 00:00:06,140
+This is actually one of the more unique
+classes in our data science track, but
+
+3
+00:00:06,140 --> 00:00:07,030
+I think its sort of one of the
+
+4
+00:00:07,030 --> 00:00:09,600
+most fundamental components of being a
+data scientist.
+
+5
+00:00:09,600 --> 00:00:11,400
+Which is being able to go out and get
+
+6
+00:00:11,400 --> 00:00:13,890
+data from whatever source it's in and
+whatever form
+
+7
+00:00:13,890 --> 00:00:15,900
+it's in, and turning it into a clean
+processed
+
+8
+00:00:15,900 --> 00:00:18,990
+data set, that then you can use to answer
+questions.
+
+9
+00:00:18,990 --> 00:00:20,790
+So in this class, we'll be talking about
+
+10
+00:00:20,790 --> 00:00:24,750
+raw versus tidy data, how to download
+files.
+
+11
+00:00:24,750 --> 00:00:26,810
+Reading in data from a very large number
+of
+
+12
+00:00:26,810 --> 00:00:31,510
+different sources, merging it together,
+reshaping it, summarizing it,
+
+13
+00:00:31,510 --> 00:00:33,820
+and then finding some data resources that
+you can
+
+14
+00:00:33,820 --> 00:00:35,850
+use to augment the data that you already
+have.
+
+15
+00:00:37,640 --> 00:00:39,550
+So here are a couple of different things
+that you might learn about.
+
+16
+00:00:39,550 --> 00:00:45,220
+So, for example, how to connect to a MySQL
+database, a MySQL database, from R.
+
+17
+00:00:45,220 --> 00:00:48,950
+So this is actually using an R package to
+go to R MySQL,
+
+18
+00:00:48,950 --> 00:00:53,296
+and you'll be able to connect the
+databases and read data from that.
+
+19
+00:00:53,296 --> 00:00:55,750
+Another idea would be sort of merging data
+together.
+
+20
+00:00:55,750 --> 00:00:59,470
+So you take different components of a data
+sets.
+
+21
+00:00:59,470 --> 00:01:02,880
+So there might be one cloud that contains
+reviews and one cloud that
+
+22
+00:01:02,880 --> 00:01:04,790
+ca, contains solutions, say from a peer
+
+23
+00:01:04,790 --> 00:01:07,210
+assessment, and you want to combine them
+together.
+
+24
+00:01:07,210 --> 00:01:10,520
+And so, you can use commands in R to merge
+those data sets together.
+
+25
+00:01:11,600 --> 00:01:14,840
+And then, talking about, sort of, raw
+versus processed data.
+
+26
+00:01:14,840 --> 00:01:17,920
+So talking about, what are the data that
+come to you in their
+
+27
+00:01:17,920 --> 00:01:22,690
+rawest possible form, the original source
+of the data versus the processed data.
+
+28
+00:01:22,690 --> 00:01:25,120
+The data that's ready for analysis, ready
+to be
+
+29
+00:01:25,120 --> 00:01:28,330
+used by people that has happened after
+you've merged
+
+30
+00:01:28,330 --> 00:01:30,830
+it, and sort, subsetted it, and
+transformed it into
+
+31
+00:01:30,830 --> 00:01:32,930
+the nice tidy data set that people can
+use.
+
+32
+00:01:32,930 --> 00:01:34,080
+So that's getting data.
+
