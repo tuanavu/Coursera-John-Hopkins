@@ -1,0 +1,60 @@
+
+
+best <- function(state, outcome) {
+    ## Read outcome data
+    ## Check that state and outcome are valid
+    ## Return hospital name in that state with lowest 30-day death
+    ## rate
+    data <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+    #outcomeDataSet <- outcomedata[which(outcomedata$State==state),]
+    
+    data2 <- data[data$State == state, ]
+    statedata <- data[ which(data$State== state), ]    
+    
+    is_a_state<- is.element(state,data[,"State"])
+    if(!(is_a_state)){
+        stop ("invalid state")
+    }else{
+    
+    if(outcome == "heart attack"){
+        hosp <- data2[!is.na(data2[ ,11]), ]
+        out1 <- as.double(hosp[ ,11])
+        hosp <- hosp[order(out1,hosp$Hospital.Name), ]
+    }
+    
+    if(outcome == "heart failure"){
+        hosp <- data2[!is.na(data2[ ,17]), ]
+        out2 <- as.double(hosp[ ,17])
+        hosp <- hosp[order(out2,hosp$Hospital.Name), ]
+    }
+    
+    if(outcome == "pneumonia"){
+        hosp <- data2[!is.na(data2[ ,23]), ]
+        out3 <- as.double(hosp[ ,23])
+        hosp <- hosp[order(out3,hosp$Hospital.Name), ]
+    }
+    
+    else{
+        stop ("invalid outcome")
+    }
+    }
+    
+    as.character(hosp[1,2]) 
+}
+        
+        
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+best("BB", "heart attack")
+best("NY", "hert attack")     
+    
+    
+        
+       
+         
+    
+   
+
+   
