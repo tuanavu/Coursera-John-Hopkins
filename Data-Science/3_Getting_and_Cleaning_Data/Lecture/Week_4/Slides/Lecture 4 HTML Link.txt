@@ -1,0 +1,9 @@
+http://jtleek.github.io/modules/03_GettingData/04_01_editingTextVariables
+
+http://jtleek.github.io/modules/03_GettingData/04_02_regularExpressions
+
+http://jtleek.github.io/modules/03_GettingData/04_03_regularExpressionsII
+
+http://jtleek.github.io/modules/03_GettingData/04_04_workingWithDates
+
+http://jtleek.github.io/modules/03_GettingData/04_05_dataResources

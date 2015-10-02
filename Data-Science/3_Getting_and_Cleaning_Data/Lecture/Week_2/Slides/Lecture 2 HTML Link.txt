@@ -1,0 +1,9 @@
+http://jtleek.github.io/modules/03_GettingData/02_01_readingMySQL
+
+http://jtleek.github.io/modules/03_GettingData/02_02_readingHDF5
+
+http://jtleek.github.io/modules/03_GettingData/02_03_readingFromTheWeb
+
+http://jtleek.github.io/modules/03_GettingData/02_04_readingFromAPIs
+
+http://jtleek.github.io/modules/03_GettingData/02_05_readingFromOtherSources
