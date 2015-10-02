@@ -1,0 +1,3 @@
+http://bcaffo.github.io/courses/06_StatisticalInference/08_tCIs/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/09_HT/index.html#1
+http://bcaffo.github.io/courses/06_StatisticalInference/10_pValues/index.html#1

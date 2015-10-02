@@ -1,0 +1,96 @@
+---
+title: "Basic Inferential data analysis"
+author: "Tuan Vu"
+date: "Saturday, October 25, 2014"
+output: pdf_document
+---
+
+*This is the second part of Statistical Inference Project.*
+
+**Requirements**
+Now in the second portion of the class, we're going to analyze the ToothGrowth data in the R datasets package. 
+Load the ToothGrowth data and perform some basic exploratory data analyses 
+Provide a basic summary of the data.
+Use confidence intervals and hypothesis tests to compare tooth growth by supp and dose. (Use the techniques from class even if there's other approaches worth considering)
+State your conclusions and the assumptions needed for your conclusions. 
+
+*Let's do some analysis*
+
+**Load the data**
+```{r}
+library(ggplot2)
+data(ToothGrowth)
+```
+
+*1. Summary of the data*
+
+**Take a look at first few rows**
+```{r}
+head(ToothGrowth)
+```
+
+**Type of Supplements and Dosages**
+```{r}
+table(ToothGrowth$supp) # Supplement
+table(ToothGrowth$dose) # Dosage
+```
+
+**Summary of ToothGrowth**
+```{r}
+summary(ToothGrowth)
+```
+
+**Correlation in ToothGrowth data**
+```{r}
+cor(ToothGrowth[sapply(ToothGrowth, is.numeric)])
+```
+
+We can see that the length of the tooth and the dosage have a high correlation
+
+**Plotting**
+```{r}
+p1 <- ggplot(ToothGrowth, aes(x =factor(dose), y = len, fill = factor(dose)))
+p1 + geom_boxplot() + xlab("Dosage") + ylab("Length")
+```
+
+Again, the boxplot shows more clearly that as the dosage increases, the length of the tooth increases.
+
+*2. Use confidence intervals and hypothesis tests to compare tooth growth by supp and dose*
+
+**The 95% Confidence Intervals of Tooth Grow**
+```{r}
+Interval <- (mean(ToothGrowth$len) + c(-1, 1) * qnorm(0.975) * sd(ToothGrowth$len)/sqrt(length(ToothGrowth$len)))
+Interval
+```
+
+**T-Test by length and Supplements**
+```{r}
+t.test(len~supp, data=ToothGrowth)
+```
+
+This T-Test shows that we cannot reject the Null hypothesis.
+
+**T-Test of Dosage Level**
+
+Subset Data
+```{r}
+dos1 <- subset(ToothGrowth, dose == 0.5)
+dos2 <- subset(ToothGrowth, dose == 1)
+dos3 <- subset(ToothGrowth, dose == 2)
+```
+
+T-Test
+```{r}
+t.test(len~supp, data=dos1) # Small Dosage = 0.5
+t.test(len~supp, data=dos2) # Medium Dosage = 1
+t.test(len~supp, data=dos3) # Big Dosage = 2
+```
+
+- For Small and Medium dosage, their p-values are small, so we can reject the null hypothesis
+- For Big Dosage, we cannot reject the null hypothesis
+
+*3. State your conclusions and the assumptions needed for your conclusions*
+
+- The Tooth Length Growth is not controlled by Supplements.
+- For dosage level 0.5 and 1, the Orange Juice has a higher effect on the length of tooth of Guinea Pigs than the Vitamin C.
+- For dosage level 2, there are so such difference between Orange Juice and Vitamin C
