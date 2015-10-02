@@ -1,0 +1,16 @@
+Did you first commit the code to your local repository?
+
+pwd (print working directory)
+cd ...../Tuan/Documents/GitHub
+git clone [url]
+
+Here are the typical steps you have to follow for git.
+git add cachematrix.R                      # Stage the file for commit 
+git add -A 				   # Add all file
+git commit -m "Submitting assignment 2"    # Commit the file to the local repo with some comment
+git push                                   # Push the commit to github
+
+Here are some other git commands which might be helpful.
+git status     # Shows the modified files (in this case cachematrix.R)
+
+git diff       # Shows you changes which can be viewed before committing. 

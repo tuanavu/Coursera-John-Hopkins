@@ -1,0 +1,86 @@
+
+
+best <- function(state, outcome) {
+    ## Read outcome data
+    ## Check that state and outcome are valid
+    ## Return hospital name in that state with lowest 30-day death
+    ## rate
+    outcomedata <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+    #outcomeDataSet <- outcomedata[which(outcomedata$State==state),]
+    
+    statedata <- outcomedata[ which(outcomedata$State== state), ]
+    
+    
+    is_a_state<- is.element(state,outcomedata[,"State"])
+    if(!(is_a_state)){
+        stop ("invalid state")
+    }else{
+        if (outcome == "heart attack"){
+            column <- statedata[[11]]
+            
+        } 
+        else if(outcome=="heart failure")
+        {
+            column <- statedata[[17]]
+           # a <- as.numeric(column)
+          #  m <- min(a)
+            
+         #   hospitalName <- as.character(outcomedata[[2]][m])
+          #  hospitalName
+        }
+        else if(outcome=="pneumonia"){
+            column <- statedata[[23]]
+          #  a <- as.numeric(column)
+          #  m <- min(a)
+            
+         #   hospitalName <- as.character(outcomedata[[2]][m])
+          #  hospitalName
+        }
+        else{
+            stop ("invalid outcome")
+        }
+    }
+  #  else{
+  #      stop ("invalid state")
+  #  }
+    
+    #a <- as.numeric(column)
+    #b <- column[a]
+    
+  #hospitalName <- as.character(statedata[,2][b])
+  #hospitalName
+    #statename <- as.character(statedata[,7][a])
+   # statename
+  
+    a <- as.numeric(column)
+    #b <- na.omit(a)
+   # c <- min(b)
+  m <- min(a,na.rm=TRUE)
+  pos <- match(m,column)
+   
+  hospitalName <- statedata[[2]][pos]
+  hospitalName
+  
+   # hospitalName <- as.vector(outcomedata[,2][c])
+   #  hospitalName2 <- na.omit(hospitalName)
+   # hospitalName
+    ##outcomedata[[2]][column]
+        
+}
+        
+        
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+best("BB", "heart attack")
+best("NY", "hert attack")     
+    
+    
+        
+       
+         
+    
+   
+
+   

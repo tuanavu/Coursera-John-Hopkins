@@ -1,0 +1,21 @@
+corr <- function(directory, threshold = 0) {
+    files_list <- dir(directory, full.names = TRUE)
+    output <- 0
+    for (i in files_list){
+        corval <- 0        
+        data <- read.csv(i) #Bind CSV files in data 
+        value <- sum(complete.cases(data))
+        data <- data[complete.cases(data),]
+        if (value > threshold){ 
+            sulfate <- data[["sulfate"]]
+            nitrate <- data[["nitrate"]]
+            corval <- cor(nitrate[!is.na(nitrate)],sulfate[!is.na(sulfate)],use="complete.obs")
+            corval <- round(corval,5)
+            if (output[1]== 0){output <- corval}
+            else {output <- c(output,corval)}
+        }
+    }
+
+output
+
+}
